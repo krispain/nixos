@@ -61,6 +61,19 @@
 
   ];
 
+  # set default editor to neovim
+  programs.neovim = {
+    enable = true;
+    defaultEditor = true;
+    viAlias = true;
+    vimAlias = true;
+    configure = {
+      customRC = ''
+        syntax on
+      '';
+    };
+  };
+
   # flatpak
   services.flatpak.enable = true;
   xdg.portal = {
