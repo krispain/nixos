@@ -25,5 +25,9 @@ imports =
   ];
 ```
 
+For VMs also include the file
+```./chris/conf.d/vm.nix``` 
+to add the vdagent for clipboard copy/paste between host and guest.
+
 Then run:
 ```nixos-rebuild switch```
