@@ -8,6 +8,7 @@
   i18n.defaultLocale = "en_CA.UTF-8";
 
   # Enable the Gnome Flashback Desktop Environment.
+  services.xserver.displayManager.lightdm.enable = true;
   services.xserver.desktopManager.gnome.flashback.enableMetacity = true;
 
   # Configure keymap in X11
