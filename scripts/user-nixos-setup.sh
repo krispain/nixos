@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/run/current-system/sw/bin/bash
 
 
 # Add flathub
@@ -10,6 +10,7 @@ flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.f
 # ####################################
 
 # Clone Dan's repo
+cd ~
 git clone https://gitlab.com/shieldwed/ch.wwcom.wwphone.git
 cd ch.wwcom.wwphone/
 
@@ -17,7 +18,7 @@ cd ch.wwcom.wwphone/
 git clone https://github.com/flathub/shared-modules
 
 # flatpak dependencies
-flatpak install flathub org.freedesktop.Sdk
+flatpak install flathub org.freedesktop.Sdk/x86_64/22.08
 flatpak install org.freedesktop.Sdk/x86_64/22.08
 flatpak install org.freedesktop.Platform/x86_64/22.08
 
@@ -31,11 +32,11 @@ flatpak --user remote-add --no-gpg-verify chris-repo /home/cpayne/flatpaks
 flatpak --user install chris-repo ch.wwcom.wwphone
 
 # create config file to set English
-echo <<EOF
+mkdir -p /home/cpayne/.var/app/ch.wwcom.wwphone/.config/wwphone
+cat <<EOF > /home/cpayne/.var/app/ch.wwcom.wwphone/.config/wwphone/wwphone.cfg
 <?xml version="1.0" emcpdomgs="UTF-8"?>
 <CONFIG lang="en" Server="nine.smartpbx.ch"/>
 EOF
-> /home/cpayne/.var/app/ch.wwcom.wwphone/.config/wwphone/wwphone.cfg
 
 # first run
 flatpak run ch.wwcom.wwphone 
