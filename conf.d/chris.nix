@@ -63,7 +63,7 @@
      libreoffice
 
      # Images/sound
-     gimp
+     gimp-with-plugins
      shotwell
      audacity
      sox
