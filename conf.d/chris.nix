@@ -76,6 +76,8 @@
      # Make gnome great again
      gnome.gnome-tweaks
      gnome.gnome-applets
+     networkmanagerapplet
+
     # Security
      protonvpn-cli
      qbittorrent
