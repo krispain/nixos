@@ -81,6 +81,7 @@
     # Security
      protonvpn-cli
      qbittorrent
+     wireguard-tools
 
   ];
 
