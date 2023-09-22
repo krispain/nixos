@@ -52,6 +52,7 @@
      ncdu
      git
      et
+     parted
 
      # GUI tools
      slack
