@@ -64,3 +64,27 @@ flatpak run ch.wwcom.wwphone
 # use:
 # nix-channel --rollback
 # nixos-rebuild switch
+#
+#
+# Upgrades
+# https://superuser.com/questions/1604694/how-to-update-every-package-on-nixos
+#
+# Confirm latest channel:
+# https://nixos.org/manual/nixos/stable/#sec-upgrading
+#
+# Update that channel
+# nix-channel --update
+#
+# the run usual update
+# nixos-rebuild switch
+#
+# package searching:
+#
+# [cpayne@nixos:~]$ nix repl
+# Welcome to Nix 2.13.5. Type :? for help.
+# nix-repl> :load <nixpkgs>
+# Added 19212 variables.
+# 
+# nix-repl> 
+
+

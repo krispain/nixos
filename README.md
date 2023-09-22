@@ -3,6 +3,8 @@
 
 (inspred by: https://git.nickyeoman.com/nick/nixos.git :-) )
 
+This configuration assumes you have installed with no GUI selected, otherwise there will be conflicts when you add this configuration.
+
 On a new install you can just get git:
 
 ```bash
