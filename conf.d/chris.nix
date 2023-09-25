@@ -59,6 +59,7 @@
      bitwarden
      signal-desktop
      authy
+     transmission
 
      # Office
      libreoffice
