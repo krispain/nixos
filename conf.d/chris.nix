@@ -59,7 +59,7 @@
      bitwarden
      signal-desktop
      authy
-     transmission-gtk
+     telegram-desktop
 
      # Office
      libreoffice
