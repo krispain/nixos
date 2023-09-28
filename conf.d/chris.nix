@@ -60,6 +60,7 @@
      signal-desktop
      authy
      telegram-desktop
+     nextcloud-client
 
      # Office
      libreoffice
