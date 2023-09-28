@@ -57,6 +57,8 @@ flatpak run ch.wwcom.wwphone
 # bitwarden
 # protonvpn-cli login cpayne
 # ssh-keygen -t ed25519
+# nextcloud
+#
 #
 # Note about undoing 
 # nixos-rebuild switch --upgrade
