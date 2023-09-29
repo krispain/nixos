@@ -53,6 +53,7 @@
      git
      et
      parted
+     zip
 
      # GUI tools
      slack
