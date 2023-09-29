@@ -54,6 +54,7 @@
      et
      parted
      zip
+     unzip
 
      # GUI tools
      slack
