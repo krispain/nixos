@@ -5,6 +5,14 @@
 
 This configuration assumes you have installed with no GUI selected, otherwise there will be conflicts when you add this configuration.
 
+On a laptop, get wifi up and running
+```bash
+nmcli dev status
+nmcli radio wifi
+nmcli dev wifi list
+nmcli --ask dev wifi connect <YOUR SSID>
+```
+
 On a new install you can just get git:
 
 ```bash
