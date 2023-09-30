@@ -90,3 +90,16 @@ flatpak run ch.wwcom.wwphone
 # nix-repl> 
 
 
+# Add persisten gnome-flashback shortcuts
+#
+# Add to Panel -> Custom Application Launcher
+# Name:		Brave
+# Command:	/run/current-system/sw/bin/brave
+# Icon:		/run/current-system/sw/share/icons/hicolor/256x256/apps/brave-browser.png 
+#
+# Name:		Mate Terminal
+# Command:	/run/current-system/sw/bin/mate-terminal
+# Icon:		/run/current-system/sw/share/icons/hicolor/48x48/apps/xterm-color_48x48.xpm 
+#
+#
+#
