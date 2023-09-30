@@ -48,10 +48,6 @@ flatpak run ch.wwcom.wwphone
 # <CONFIG lang="en" Server="nine.smartpbx.ch" User="cpayne" Password="PUT THE PASSWORD HERE!!!!!!" mode="1" prefix1="0041" preventTLS="0" active_identity="1" numListViews="1" isExpanded="0" MainFormX="1086" MainFormY="61" lv0w="250"/>
 
 
-# Some useful links to install stuff
-# Bitwarden brave addon
-# https://chrome.google.com/webstore/detail/bitwarden-free-password-m/nngceckbapebfimnlniiiahkandclblb
-#
 # Manual commands to run/setup
 # authy
 # bitwarden
@@ -77,6 +73,10 @@ flatpak run ch.wwcom.wwphone
 # Name:		Mate Terminal
 # Command:	/run/current-system/sw/bin/mate-terminal
 # Icon:		/run/current-system/sw/share/icons/hicolor/48x48/apps/xterm-color_48x48.xpm 
+#
+# Some useful links to install stuff
+# Bitwarden brave addon
+# https://chrome.google.com/webstore/detail/bitwarden-free-password-m/nngceckbapebfimnlniiiahkandclblb
 #
 #
 #
