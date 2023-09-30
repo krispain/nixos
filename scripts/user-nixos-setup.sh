@@ -70,9 +70,13 @@ flatpak run ch.wwcom.wwphone
 # Command:	/run/current-system/sw/bin/brave
 # Icon:		/run/current-system/sw/share/icons/hicolor/256x256/apps/brave-browser.png 
 #
+# Add to Panel -> Custom Application Launcher
 # Name:		Mate Terminal
 # Command:	/run/current-system/sw/bin/mate-terminal
 # Icon:		/run/current-system/sw/share/icons/hicolor/48x48/apps/xterm-color_48x48.xpm 
+#
+# Add to Panel -> System Indicators
+# 
 #
 # Some useful links to install stuff
 # Bitwarden brave addon
