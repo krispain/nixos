@@ -59,6 +59,27 @@ flatpak run ch.wwcom.wwphone
 # ssh-keygen -t ed25519
 # nextcloud
 #
+# Accessories -> Tweaks -> Windows -> Focus on Hover
+# 
+# Chris Payne -> Settings -> Keyboard -> Keyboard Shortcuts -> View and Customize Shortcus -> Custom Shortcuts -> Add Shortcut
+# Name:		Mate Screenshot
+# Command:	/run/current-system/sw/bin/mate-screenshot -w
+# Shortcut: 	Ctrl-Shift-Fn-Printscreen
+# Replace
+#
+# Add persisten gnome-flashback shortcuts
+#
+# Add to Panel -> Custom Application Launcher
+# Name:		Brave
+# Command:	/run/current-system/sw/bin/brave
+# Icon:		/run/current-system/sw/share/icons/hicolor/256x256/apps/brave-browser.png 
+#
+# Name:		Mate Terminal
+# Command:	/run/current-system/sw/bin/mate-terminal
+# Icon:		/run/current-system/sw/share/icons/hicolor/48x48/apps/xterm-color_48x48.xpm 
+#
+#
+#
 #
 # Note about undoing 
 # nixos-rebuild switch --upgrade
@@ -89,17 +110,3 @@ flatpak run ch.wwcom.wwphone
 # 
 # nix-repl> 
 
-
-# Add persisten gnome-flashback shortcuts
-#
-# Add to Panel -> Custom Application Launcher
-# Name:		Brave
-# Command:	/run/current-system/sw/bin/brave
-# Icon:		/run/current-system/sw/share/icons/hicolor/256x256/apps/brave-browser.png 
-#
-# Name:		Mate Terminal
-# Command:	/run/current-system/sw/bin/mate-terminal
-# Icon:		/run/current-system/sw/share/icons/hicolor/48x48/apps/xterm-color_48x48.xpm 
-#
-#
-#
