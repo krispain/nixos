@@ -71,6 +71,7 @@
      # Images/sound
      gimp-with-plugins
      shotwell
+     mate.mate-utils
      audacity
      sox
      ffmpeg
