@@ -83,7 +83,17 @@ flatpak run ch.wwcom.wwphone
 # https://chrome.google.com/webstore/detail/bitwarden-free-password-m/nngceckbapebfimnlniiiahkandclblb
 #
 #
+# Very specific Chris things
+# link nextcloud Documents
 #
+# cd /home/cpayne
+# rmdir Documents && ln -s Nextcloud/Documents
+#
+# Setup a couple ssh connections
+#
+# ssh-copy-id 172.16.1.71 @ pi4 in house
+# ssh-copy-id housing.krispain.com # Zurich
+# 
 #
 # Note about undoing 
 # nixos-rebuild switch --upgrade
