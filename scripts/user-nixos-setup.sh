@@ -94,6 +94,10 @@ flatpak run ch.wwcom.wwphone
 # ssh-copy-id 172.16.1.71 @ pi4 in house
 # ssh-copy-id housing.krispain.com # Zurich
 # 
+# Setup Brave
+# Sync from another device
+# Change search to startpage.com
+#
 #
 # Note about undoing 
 # nixos-rebuild switch --upgrade
