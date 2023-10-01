@@ -97,6 +97,10 @@ flatpak run ch.wwcom.wwphone
 # Setup Brave
 # Sync from another device
 # Change search to startpage.com
+# Start where you left off
+# Wide address bar
+# always show full url
+#
 #
 #
 # Note about undoing 
