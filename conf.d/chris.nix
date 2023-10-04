@@ -75,6 +75,7 @@
      audacity
      sox
      ffmpeg
+     vlc
 
      # so we can build our own flatpak, specifically wwphone
      flatpak-builder
