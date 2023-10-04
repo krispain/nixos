@@ -72,6 +72,7 @@
      gimp-with-plugins
      shotwell
      mate.mate-utils
+     mate.eom
      audacity
      sox
      ffmpeg
