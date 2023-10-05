@@ -72,9 +72,11 @@
      gimp-with-plugins
      shotwell
      mate.mate-utils
+     mate.eom
      audacity
      sox
      ffmpeg
+     vlc
 
      # so we can build our own flatpak, specifically wwphone
      flatpak-builder
