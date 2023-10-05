@@ -56,6 +56,7 @@
      zip
      unzip
      file
+     wget
 
      # GUI tools
      slack
