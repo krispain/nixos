@@ -1,3 +1,8 @@
+# Update hostname in main /etc/nixos/configuration.nix
+
+networking.hostName = "personal-nixos"; # Define your hostname.
+
+
 # Manual commands to run/setup
 authy
 bitwarden
