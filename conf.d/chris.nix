@@ -57,6 +57,7 @@
      unzip
      file
      wget
+     traceroute
 
      # GUI tools
      slack
