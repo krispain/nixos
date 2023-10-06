@@ -43,7 +43,10 @@ https://chrome.google.com/webstore/detail/bitwarden-free-password-m/nngceckbapeb
 #
 cd /home/cpayne
 rmdir Documents && ln -s Nextcloud/Documents
-#
+# on personal link Music to host
+rmdir Music && ln -s shared/Music
+
+
 # Setup a couple ssh connections
 #
 ssh-copy-id 172.16.1.71 @ pi4 in house
