@@ -49,7 +49,7 @@ rmdir Music && ln -s shared/Music
 
 # Setup a couple ssh connections
 #
-ssh-copy-id 172.16.1.71 @ pi4 in house
+ssh-copy-id 172.16.1.71 # pi4 in house
 ssh-copy-id housing.krispain.com # Zurich
 # 
 # Setup Brave
