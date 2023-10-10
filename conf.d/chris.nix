@@ -102,7 +102,6 @@
     defaultEditor = true;
     viAlias = true;
     vimAlias = true;
-    viewAlias = true;
     configure = {
       customRC = ''
         syntax on
