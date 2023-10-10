@@ -105,6 +105,7 @@
     configure = {
       customRC = ''
         syntax on
+	set mouse=r
       '';
     };
   };
