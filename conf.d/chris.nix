@@ -58,6 +58,7 @@
      file
      wget
      traceroute
+     android-tools
 
      # GUI tools
      slack
