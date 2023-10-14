@@ -59,6 +59,7 @@
      wget
      traceroute
      android-tools
+     eternal-terminal
 
      # GUI tools
      slack
