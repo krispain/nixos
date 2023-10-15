@@ -68,6 +68,7 @@
      authy
      telegram-desktop
      nextcloud-client
+     meld
 
      # Office
      libreoffice
