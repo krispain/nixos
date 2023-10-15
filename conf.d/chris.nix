@@ -100,7 +100,7 @@
   ];
 
   # prioritize eternal-terminal et over the egg-timer one
-  pkgs.eternal-terminal = {
+  nixos.eternal-terminal = {
     meta.priority = 10;
   };
 
