@@ -100,7 +100,7 @@
   ];
 
   # prioritize eternal-terminal et over the egg-timer one
-  nixpkgs.eternal-terminal.meta.priority = 10;
+  pkgs.eternal-terminal.meta.priority = 10;
   
   # set default editor to neovim
   programs.neovim = {
