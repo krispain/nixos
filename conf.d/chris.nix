@@ -59,7 +59,7 @@
      wget
      traceroute
      android-tools
-     eternal-terminal
+     (lib.hiPrio pkgs.eternal-terminal) # higher priority than egg timer 
 
      # GUI tools
      slack
