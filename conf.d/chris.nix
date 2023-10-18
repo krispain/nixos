@@ -40,10 +40,6 @@
     #media-session.enable = true;
   };
 
-  environment.systemPackages = [
-    pkgs.zram-generator
-  ];
-
   environment.systemPackages = with pkgs; [
      # browsers
      chromium
@@ -100,6 +96,9 @@
      protonvpn-cli
      qbittorrent
      wireguard-tools
+
+    # zram for "swap"
+    pkgs.zram-generator
 
   ];
 
