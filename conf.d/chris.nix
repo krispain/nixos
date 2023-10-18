@@ -40,6 +40,10 @@
     #media-session.enable = true;
   };
 
+  environment.systemPackages = [
+    pkgs.zram-generator
+  ];
+
   environment.systemPackages = with pkgs; [
      # browsers
      chromium
