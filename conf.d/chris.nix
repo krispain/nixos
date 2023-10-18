@@ -130,4 +130,7 @@
     wlr.enable = true;
   }; 
 
+  # enable zram swap
+  zramSwap.enable = true;
+
 }
