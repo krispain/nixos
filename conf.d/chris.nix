@@ -35,10 +35,10 @@
     # If you want to use JACK applications, uncomment this
     #jack.enable = true;
 
-    # wireguard
-    boot.extraModulePackages = [ config.boot.kernelPackages.wireguard ];
-
   };
+
+  # wireguard
+  boot.extraModulePackages = [ config.boot.kernelPackages.wireguard ];
 
   environment.systemPackages = with pkgs; [
      # browsers
