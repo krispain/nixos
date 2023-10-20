@@ -37,9 +37,6 @@
 
   };
 
-  # wireguard
-  boot.extraModulePackages = [ config.boot.kernelPackages.wireguard ];
-
   environment.systemPackages = with pkgs; [
      # browsers
      chromium
