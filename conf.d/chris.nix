@@ -35,9 +35,9 @@
     # If you want to use JACK applications, uncomment this
     #jack.enable = true;
 
-    # use the example session manager (no others are packaged yet so this is enabled by default,
-    # no need to redefine it in your config for now)
-    #media-session.enable = true;
+    # wireguard
+    boot.extraModulePackages = [ config.boot.kernelPackages.wireguard ];
+
   };
 
   environment.systemPackages = with pkgs; [
@@ -95,6 +95,7 @@
     # Security
      protonvpn-cli
      qbittorrent
+     wireguard
      wireguard-tools
 
     # zram for "swap"
