@@ -95,7 +95,6 @@
     # Security
      protonvpn-cli
      qbittorrent
-     wireguard
      wireguard-tools
 
     # zram for "swap"
