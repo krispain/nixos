@@ -67,6 +67,7 @@
      nextcloud-client
      meld
      adoptopenjdk-icedtea-web
+     openvpn
 
      # Office
      libreoffice
