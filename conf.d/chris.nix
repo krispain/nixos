@@ -66,6 +66,7 @@
      telegram-desktop
      nextcloud-client
      meld
+     adoptopenjdk-icedtea-web
 
      # Office
      libreoffice
