@@ -41,6 +41,7 @@
      # browsers
      chromium
      brave
+     firefox-esr-115-unwrapped
 
      # CLI tools
      mate.mate-terminal
