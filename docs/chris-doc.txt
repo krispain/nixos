@@ -51,15 +51,23 @@ rmdir Music && ln -s shared/Music
 #
 ssh-copy-id 172.16.1.71 # pi4 in house
 ssh-copy-id housing.krispain.com # Zurich
-# 
+Add to github account :-) 
+
+ 
 # Setup Brave
 # Sync from another device
 # Change search to startpage.com
 # Start where you left off
 # Wide address bar
 # always show full url
-#
-#
+
+# configure printer. From gnome settings add a printer
+should be discovered on home network
+Printer details
+Install ppd from  data/hp-officejet_4650_series.ppd
+
+
+
 #
 # Note about undoing 
 # https://superuser.com/questions/1604694/how-to-update-every-package-on-nixos
