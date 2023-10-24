@@ -30,11 +30,9 @@
     openFirewall = true;
   };
 
-  # Scanner
-  hardware.sane =
-      { enable = true;
-      extraBackends = [ sane-airscan ];
-    };
+  # enables support for SANE scanners
+  hardware.sane.enable = true; 
+  hardware.sane.extraBackends = [ pkgs.sane-airscan ];
 
   # Enable sound with pipewire.
   sound.enable = true;
