@@ -30,7 +30,9 @@
     openFirewall = true;
   };
 
-  hardware.sane.enable = true; # enables support for SANE scanners
+  # enables support for SANE scanners
+  hardware.sane.enable = true; 
+  hardware.sane.extraBackends = [ pkgs.hplipWithPlugin ];
 
   # Enable sound with pipewire.
   sound.enable = true;
