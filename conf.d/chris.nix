@@ -30,6 +30,8 @@
     openFirewall = true;
   };
 
+  hardware.sane.enable = true; # enables support for SANE scanners
+
   # Enable sound with pipewire.
   sound.enable = true;
   hardware.pulseaudio.enable = false;
