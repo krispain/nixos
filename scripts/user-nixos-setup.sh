@@ -18,9 +18,9 @@ cd ch.wwcom.wwphone/
 git clone https://github.com/flathub/shared-modules
 
 # flatpak dependencies
-flatpak install flathub org.freedesktop.Sdk/x86_64/22.08
-flatpak install org.freedesktop.Sdk/x86_64/22.08
-flatpak install org.freedesktop.Platform/x86_64/22.08
+flatpak install flathub org.freedesktop.Sdk/x86_64/23.08
+flatpak install org.freedesktop.Sdk/x86_64/23.08
+flatpak install org.freedesktop.Platform/x86_64/23.08
 
 # build flatpak
 flatpak-builder --repo=/home/cpayne/flatpaks/ build-dir ch.wwcom.wwphone.yaml --force-clean
