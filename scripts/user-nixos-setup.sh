@@ -46,4 +46,4 @@ flatpak run ch.wwcom.wwphone
 # cat <<EOF > /home/cpayne/.var/app/ch.wwcom.wwphone/.config/wwphone/wwphone.cfg
 # <?xml version="1.0" emcpdomgs="UTF-8"?>
 # <CONFIG lang="en" Server="nine.smartpbx.ch" User="cpayne" Password="PUT THE PASSWORD HERE!!!!!!" mode="1" prefix1="0041" preventTLS="0" active_identity="1" numListViews="1" isExpanded="0" MainFormX="1086" MainFormY="61" lv0w="250"/>
-
+# EOF
