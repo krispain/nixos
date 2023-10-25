@@ -99,5 +99,7 @@ nix-repl>
 
 # Clean up unused stuff
 
-nix-collect-garbage -d
+nix-collect-garbage --delete-older-than 7d --dry-run 
+# if sane....
+nix-collect-garbage --delete-older-than 7d
 
