@@ -9,6 +9,8 @@ bitwarden
 protonvpn-cli login cpayne
 ssh-keygen -t ed25519
 nextcloud		https://nextcloud.skierswithoutboarders.com
+signal
+telegram
 
 # Accessories -> Tweaks -> Windows -> Focus on Hover
 # 
@@ -61,6 +63,9 @@ ssh-copy-id housing.krispain.com # Zurich
 tail -n 1 /home/cpayne/.ssh/authorized_keys >> /root/.ssh/authorized_keys
 
 Add to github account :-) 
+clone
+mkdir ~/github && cd ~/github
+git clone git@github.com:krispain/nixos.git
 
  
 # Setup Brave
