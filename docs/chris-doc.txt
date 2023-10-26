@@ -31,6 +31,8 @@ Command:	/run/current-system/sw/bin/mate-terminal
 Icon:		/run/current-system/sw/share/icons/hicolor/48x48/apps/xterm-color_48x48.xpm 
 
 Add to Panel -> System Indicators
+Add to Panel -> System Monitor
+	-> configure 
 
 
 # Some useful links to install stuff
@@ -74,8 +76,15 @@ Printer details
 Install ppd from  data/hp-officejet_4650_series.ppd
 
 
+# for nine VPN, download config files from protondrive
+rename to be interface names
+connect using
+wg-quick up <interface>.conf
 
-#
+
+
+
+
 # Note about undoing 
 # https://superuser.com/questions/1604694/how-to-update-every-package-on-nixos
 
