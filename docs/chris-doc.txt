@@ -48,6 +48,7 @@ https://chrome.google.com/webstore/detail/bitwarden-free-password-m/nngceckbapeb
 cd /home/cpayne
 rmdir Documents && ln -s Nextcloud/Documents
 rmdir Music && ln -s Nextcloud/Music
+ln -s Nextcloud/bin
 
 # on personal link Music to host
 rmdir Music && ln -s shared/Music
