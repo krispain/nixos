@@ -121,13 +121,6 @@
 
   ];
 
-  # prioritize eternal-terminal et over the egg-timer one
-  # packageOverrides = pkgs: {
-  #    eternal-terminal = pkgs.eternal-terminal.overrideAttrs (attrs: {
-  #      meta.priority = pkgs.et.meta.priority +1;
-  #    });
-  # };
-
   # set default editor to neovim
   programs.neovim = {
     enable = true;
