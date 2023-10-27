@@ -102,6 +102,8 @@
      gnome.gnome-tweaks
      gnome.gnome-applets
      networkmanagerapplet
+     gst_all_1.gst-plugins-base
+     gst_all_1.gst-plugins-good
 
     # Security
      protonvpn-cli
