@@ -70,7 +70,7 @@
      android-tools
      (lib.hiPrio pkgs.eternal-terminal) # higher priority than egg timer 
      fwupd
-     
+ 
      # GUI tools
      slack
      bitwarden
@@ -138,6 +138,10 @@
 
   # flatpak
   services.flatpak.enable = true;
+
+  # fwupd
+  services.fwupd.enable = true;
+
   xdg.portal = {
     enable = true;
     wlr.enable = true;
