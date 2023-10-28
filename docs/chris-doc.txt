@@ -110,6 +110,15 @@ nix-channel --update
 # the run usual update
 nixos-rebuild switch
 
+
+# to list gernarions available:
+nix-env --list-generations --profile /nix/var/nix/profiles/system
+
+# To set a working one default, once you boot into it successfully:
+/run/current-system/bin/switch-to-configuration boot
+
+
+
 # package searching:
 
 $ nix repl
