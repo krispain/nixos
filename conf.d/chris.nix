@@ -69,7 +69,8 @@
      traceroute
      android-tools
      (lib.hiPrio pkgs.eternal-terminal) # higher priority than egg timer 
-
+     fwupd
+     
      # GUI tools
      slack
      bitwarden
