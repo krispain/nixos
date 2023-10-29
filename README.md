@@ -40,5 +40,5 @@ For VMs also include the file
 to add the vdagent for clipboard copy/paste between host and guest.
 
 Then run:
-```nixos-rebuild switch```
+```nixos-rebuild switch --upgrade```
 
