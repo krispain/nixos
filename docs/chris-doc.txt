@@ -13,6 +13,7 @@ signal
 telegram
 
 # Accessories -> Tweaks -> Windows -> Focus on Hover
+# Accessories -> Tweaks -> Window Titlebars -> Middle Click -> "Lower"
 # 
 Chris Payne -> Settings -> Keyboard -> Keyboard Shortcuts -> View and Customize Shortcus -> Custom Shortcuts -> Add Shortcut
 Name:		Mate Screenshot
