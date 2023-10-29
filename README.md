@@ -16,7 +16,7 @@ nmcli --ask dev wifi connect <YOUR SSID>
 On a new install you can just get git:
 
 ```bash
-nix-shell -p git
+nix-shell -p git vim
 ```
 
 Then you can pull this repo as root:
