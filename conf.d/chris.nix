@@ -71,6 +71,7 @@
      (lib.hiPrio pkgs.eternal-terminal) # higher priority than egg timer 
      fwupd
      nvd
+     strings
  
      # GUI tools
      slack
