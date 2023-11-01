@@ -4,5 +4,6 @@
     # gstream HW accel
     gst_all_1.gst-vaapi
     dmidecode
+    gnome.gnome-power-manager
   ];
 }
