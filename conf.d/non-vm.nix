@@ -5,5 +5,6 @@
     gst_all_1.gst-vaapi
     dmidecode
     gnome.gnome-power-manager
+    virtiofsd
   ];
 }
