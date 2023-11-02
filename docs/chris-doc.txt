@@ -140,3 +140,18 @@ nix-collect-garbage --delete-older-than 7d
 
 nvd diff /nix/var/nix/profiles/system-{134,135}-link
 
+
+
+2023/11/02
+
+Solved xorg QEMU VM issue:
+https://ubuntuforums.org/showthread.php?t=2486167&p=14158211#post14158211
+
+- Changing the video driver from "QXL" to "Virtio"
+- Enabling 3D acceleration
+- (Click "Apply")
+- Enabling OpenGL in the "Display Spice" tab
+- Setting "Listen type" to "None" (same tab)
+- (Click "Apply" again)
+
+
