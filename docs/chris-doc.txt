@@ -140,6 +140,10 @@ nix-collect-garbage --delete-older-than 7d
 
 nvd diff /nix/var/nix/profiles/system-{134,135}-link
 
+For just the most recent changes aka the last update:
+
+nvd diff $(ls -trd /nix/var/nix/profiles/*-link|tail -n 2)
+
 
 
 2023/11/02
