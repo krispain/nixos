@@ -7,4 +7,8 @@
      dnsmasq
   ];
 
+# need to run these 2 to get networking running and on by default
+# virsh net-autostart default
+# virsh net-start default
+
 }
