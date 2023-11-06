@@ -5,7 +5,7 @@
     rules."route-wg-vpn" = {
       onState = ["routable" "off"];
       script = ''
-        #!${pkgs.runtimeShell}
+        #!/run/current-system/sw/bin/bash
         declare -A IF_VPN_IP
 	IF_VPN_IP=(
 	[wg_nine]="178.209.34.137"
