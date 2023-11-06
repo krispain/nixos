@@ -7,10 +7,6 @@
       script = ''
         #!${pkgs.runtimeShell}
         declare -A IF_VPN_IP
-	IF_VPN_IP=(
-	[wg_nine]="178.209.34.137"
-	[wg_nine34]="5.148.185.104"
-)
 
         case $2 in
           up)
@@ -47,6 +43,5 @@
           ;;
         esac
       ''
-    };
   };
 };
