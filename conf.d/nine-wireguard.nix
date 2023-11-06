@@ -5,7 +5,7 @@
     rules."route-wg-vpn" = {
       onState = ["routable" "off"];
       script = ''
-        #!/run/current-system/sw/bin/bash
+        #!${pkgs.runtimeShell}
         declare -A IF_VPN_IP
 	IF_VPN_IP=(
 	[wg_nine]="178.209.34.137"
@@ -14,17 +14,28 @@
 
         case $2 in
           up)
-            for ifdev in "wg_nine wg_nine34"; do
-              if ip link show dev "${ifdev}" &>> /dev/null; then
-                ip route flush table "${ifdev}" || true
-                ip route|grep default | sed -e 's/.*via \(.*\) dev.*/\1/' | xargs -L1 ip route add "${IF_VPN_IP[\$ifdev]}" via
-              fi
-            done
+            if ip link show dev "${ifdev}" &>> /dev/null; then
+              ip route flush table "${ifdev}" || true
+	      case $1 in
+	        wg_nine)
+                  ip route|grep default | sed -e 's/.*via \(.*\) dev.*/\1/' | xargs -L1 ip route add 178.209.34.137 via
+		  ;;
+		wg_nine34)
+                  ip route|grep default | sed -e 's/.*via \(.*\) dev.*/\1/' | xargs -L1 ip route add 5.148.185.104 via
+		  ;;
+                *)
+                  :
+                ;;
+	      esac
+            fi
           ;;
           down)
             case $1 in
-              wg_nine | wg_nine34)
-	        ip route|grep default | sed -e 's/.*via \(.*\) dev.*/\1/' | xargs -L1 ip route del "${IF_VPN_IP[\$ifdev]}" via
+              wg_nine)
+	        ip route|grep default | sed -e 's/.*via \(.*\) dev.*/\1/' | xargs -L1 ip route del 178.209.34.137 via
+	        ;;
+	      wg_nine34)
+	        ip route|grep default | sed -e 's/.*via \(.*\) dev.*/\1/' | xargs -L1 ip route del 5.148.185.104 via
               ;;
               *)
                 :
