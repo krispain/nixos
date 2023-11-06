@@ -1,3 +1,4 @@
+{ pkgs, ... }:
 {
 # setup the routing for the nine wireguard VPNs
   services.networkd-dispatcher = {
@@ -6,7 +7,6 @@
       onState = ["routable" "off"];
       script = ''
         #!${pkgs.runtimeShell}
-        declare -A IF_VPN_IP
 
         case $2 in
           up)
