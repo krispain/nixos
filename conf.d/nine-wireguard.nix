@@ -10,8 +10,8 @@
 
         case $2 in
           up)
-            if ip link show dev "${ifdev}" &>> /dev/null; then
-              ip route flush table "${ifdev}" || true
+            if ip link show dev $1 &>> /dev/null; then
+              ip route flush table $1 || true
 	      case $1 in
 	        wg_nine)
                   ip route|grep default | sed -e 's/.*via \(.*\) dev.*/\1/' | xargs -L1 ip route add 178.209.34.137 via
