@@ -23,12 +23,7 @@
   # Enable CUPS to print documents.
   services.printing.enable = true;
 
-#  # printer discovery
-#  services.avahi = {
-#    enable = true;
-#    nssmdns = true;
-#    openFirewall = true;
-#  };
+  # printer discovery, custom from https://nixos.wiki/wiki/Printing "Troubleshooting"
   services.avahi.nssmdns = false; # Use the settings from below
     # settings from avahi-daemon.nix where mdns is replaced with mdns4
   system.nssModules = pkgs.lib.optional (!config.services.avahi.nssmdns) pkgs.nssmdns;
