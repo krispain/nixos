@@ -8,8 +8,8 @@
       script = ''
 #!${pkgs.runtimeShell}
 
-case $OperationalState in
-  routable)
+case $AdministrativeState in
+  configured)
     if ip link show dev wg_nine &>> /dev/null; then
       ip route flush table wg_nine || true
       ip route|grep default | sed -e 's/.*via \(.*\) dev.*/\1/' | xargs -L1 ip route add 178.209.34.137 via
@@ -20,7 +20,7 @@ case $OperationalState in
     fi
     esac
   ;;
-  off)
+  *)
     case $IFACE in
       wg_nine)
         ip route|grep default | sed -e 's/.*via \(.*\) dev.*/\1/' | xargs -L1 ip route del 178.209.34.137 via
@@ -32,9 +32,6 @@ case $OperationalState in
         :
       ;;
     esac
-  ;;
-  *)
-    :
   ;;
 esac
       '';
