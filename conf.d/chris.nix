@@ -75,6 +75,7 @@
      fwupd
      nvd
      bintools
+     rclone
  
      # GUI tools
      slack
