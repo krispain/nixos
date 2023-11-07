@@ -13,7 +13,6 @@ case $AdministrativeState in
     if ip link show dev wg_nine &>> /dev/null; then
       ip route flush table wg_nine || true
       ip route|grep default | sed -e 's/.*via \(.*\) dev.*/\1/' | xargs -L1 ip route add 178.209.34.137 via
-    fi
     elsif ip link show dev wg_nine34 &>> /dev/null; then
       ip route flush table wg_nine34 || true
       ip route|grep default | sed -e 's/.*via \(.*\) dev.*/\1/' | xargs -L1 ip route add 5.148.185.104 via
