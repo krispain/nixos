@@ -159,3 +159,24 @@ https://ubuntuforums.org/showthread.php?t=2486167&p=14158211#post14158211
 - (Click "Apply" again)
 
 
+2023/11/07
+
+To run the old java consoles, this is what is needed:
+
+Setup Firefox to connect to them by
+
+about:config
+
+security.tls.version.min	1
+
+
+Then do this so the javaws can connect:
+
+
+[cpayne@thinkpad-nixos:~]$ cat /home/cpayne/.config/icedtea-web/disabled_tls.properties
+jdk.tls.disabledAlgorithms=SSLv3
+jdk.jar.disabledAlgorithms=MD2
+
+[cpayne@thinkpad-nixos:~]$ javaws -J-Djava.security.properties=/home/cpayne/.config/icedtea-web/disabled_tls.properties ~/Downloads/jviewer.jnlp
+
+
