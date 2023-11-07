@@ -71,6 +71,7 @@
      traceroute
      android-tools
      (lib.hiPrio pkgs.eternal-terminal) # higher priority than egg timer 
+     mosh
      fwupd
      nvd
      bintools
