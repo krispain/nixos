@@ -76,7 +76,8 @@
      nvd
      bintools
      rclone
- 
+     whois
+
      # GUI tools
      slack
      bitwarden
