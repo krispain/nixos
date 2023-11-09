@@ -14,7 +14,11 @@ telegram
 
 # Accessories -> Tweaks -> Windows -> Focus on Hover
 # Accessories -> Tweaks -> Window Titlebars -> Middle Click -> "Lower"
- 
+# Mate Terminal Prefernces -> Edit -> Profile Preferences" -> Scrolling -> Unlimited
+#							   -> Colours -> "White on Black"
+# 							   -> Title and Command -> "Replace initial title"
+
+
 Chris Payne -> Settings -> Keyboard -> Keyboard Shortcuts -> View and Customize Shortcus -> Custom Shortcuts -> Add Shortcut
 Name:		Mate Screenshot
 Command:	/run/current-system/sw/bin/mate-screenshot -w
