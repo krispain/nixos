@@ -14,7 +14,7 @@ telegram
 
 # Accessories -> Tweaks -> Windows -> Focus on Hover
 # Accessories -> Tweaks -> Window Titlebars -> Middle Click -> "Lower"
-# 
+ 
 Chris Payne -> Settings -> Keyboard -> Keyboard Shortcuts -> View and Customize Shortcus -> Custom Shortcuts -> Add Shortcut
 Name:		Mate Screenshot
 Command:	/run/current-system/sw/bin/mate-screenshot -w
@@ -41,11 +41,11 @@ Add to Panel -> System Monitor
 # Some useful links to install stuff
 # Bitwarden brave addon
 https://chrome.google.com/webstore/detail/bitwarden-free-password-m/nngceckbapebfimnlniiiahkandclblb
-#
-#
+
+
 # Very specific Chris things
 # link nextcloud Documents
-#
+
 cd /home/cpayne
 rmdir Documents && ln -s Nextcloud/Documents
 rmdir Music && ln -s Nextcloud/Music
@@ -56,7 +56,7 @@ rmdir Music && ln -s shared/Music
 
 
 # Setup a couple ssh connections
-#
+
 ssh-copy-id 172.16.1.71 # pi4 in house
 # as root on pi4 do:
 tail -n 1 /home/cpayne/.ssh/authorized_keys >> /root/.ssh/authorized_keys
@@ -76,12 +76,6 @@ git clone git@github.com:krispain/nixos.git
 # Start where you left off
 # Wide address bar
 # always show full url
-
-# configure printer. From gnome settings add a printer
-should be discovered on home network
-Printer details
-Install ppd from  data/hp-officejet_4650_series.ppd
-
 
 # for nine VPN, download config files from protondrive
 rename to be interface names
