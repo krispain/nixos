@@ -8,6 +8,12 @@
     driSupport32Bit = true;
   };
 
+  boot.initrd.kernelModules = [ "nvidia" ];
+  boot.extraModulePackages = [ config.boot.kernelPackages.nvidia_x11 ];
+
+  # try this if above still fails
+  # boot.kernelParams = [ "module_blacklist=i915" ];
+
   # Load nvidia driver for Xorg and Wayland
   services.xserver.videoDrivers = ["nvidia"];
 
@@ -41,6 +47,7 @@
 
   hardware.nvidia.prime = {
     # Make sure to use the correct Bus ID values for your system!
+    sync.enable = true;
     intelBusId = "PCI:0:2:0";
     nvidiaBusId = "PCI:1:0:0";
   };
