@@ -47,7 +47,11 @@
 
   hardware.nvidia.prime = {
     # Make sure to use the correct Bus ID values for your system!
-    sync.enable = true;
+    offload = {
+      enable = true;
+      enableOffloadCmd = true;
+    };
+
     intelBusId = "PCI:0:2:0";
     nvidiaBusId = "PCI:1:0:0";
   };
