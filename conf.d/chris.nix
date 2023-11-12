@@ -88,6 +88,7 @@
      meld
      adoptopenjdk-icedtea-web
      openvpn
+     glxinfo
 
      # Office
      libreoffice
