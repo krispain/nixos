@@ -102,6 +102,7 @@
      sox
      ffmpeg
      vlc
+     mplayer
      yt-dlp
 
      # so we can build our own flatpak, specifically wwphone
