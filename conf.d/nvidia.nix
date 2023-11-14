@@ -1,12 +1,12 @@
 { config, lib, pkgs, ... }:
 {
 
-#   # Enable OpenGL
-#   hardware.opengl = {
-#     enable = true;
-#     driSupport = true;
-#     driSupport32Bit = true;
-#   };
+  # Enable OpenGL
+  hardware.opengl = {
+    enable = true;
+    driSupport = true;
+    driSupport32Bit = true;
+  };
 
   boot.initrd.kernelModules = [ "nvidia" ];
   boot.extraModulePackages = [ config.boot.kernelPackages.nvidia_x11 ];
