@@ -25,7 +25,7 @@
         "https://download.nvidia.com/XFree86/Linux-x86_64/${version}/NVIDIA-Linux-x86_64-${version}.run"
       ];
       sha256 = "";
-    }
+    };
   );
 
   hardware.nvidia = {
