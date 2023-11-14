@@ -19,14 +19,14 @@
 
   hardware.nvidia.package = config.boot.kernelPackages.nvidiaPackages.stable.overrideAttrs(old: let 
     version = "535.129.03";
-  {
+  
     src = fetchurl {
       urls = [
         "https://download.nvidia.com/XFree86/Linux-x86_64/${version}/NVIDIA-Linux-x86_64-${version}.run"
       ];
       sha256 = "";
     }
-  });
+  );
 
   hardware.nvidia = {
 
