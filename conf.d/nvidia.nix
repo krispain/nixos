@@ -60,7 +60,9 @@
 
   hardware.nvidia.prime = {
     # Make sure to use the correct Bus ID values for your system!
-    sync.enable = true;
+    reverseSync.enable = true;
+    # Enable if using an external GPU
+    allowExternalGpu = false;
 
     intelBusId = "PCI:0:2:0";
     nvidiaBusId = "PCI:1:0:0";
