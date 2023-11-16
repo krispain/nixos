@@ -7,5 +7,6 @@
     gnome.gnome-power-manager
     virtiofsd
     lm_sensors
+    pciutils
   ];
 }
