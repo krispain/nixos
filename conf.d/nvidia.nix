@@ -12,7 +12,7 @@
 #   boot.extraModulePackages = [ config.boot.kernelPackages.nvidia_x11 ];
 # 
   # try this if above still fails
-  # boot.kernelParams = [ "module_blacklist=i915" ];
+  boot.kernelParams = [ "module_blacklist=i915" ];
 
   # https://wiki.archlinux.org/title/NVIDIA_Optimus#Use_NVIDIA_graphics_only
 #   boot.kernelParams = [ "rcutree.rcu_idle_gp_delay=1" ];
