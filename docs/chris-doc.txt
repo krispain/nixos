@@ -177,4 +177,17 @@ jdk.jar.disabledAlgorithms=MD2
 
 [cpayne@thinkpad-nixos:~]$ javaws -J-Djava.security.properties=/home/cpayne/.config/icedtea-web/disabled_tls.properties ~/Downloads/jviewer.jnlp
 
+2023/11/14
+
+Setup script 
+
+[cpayne@thinkpad-nixos:~/github/nixos]$ cat ~/bin/javaws-nixos.sh 
+#!/bin/sh
+
+javaws -J-Djava.security.properties=/home/cpayne/.config/icedtea-web/disabled_tls.properties "${1}"
+
+[cpayne@thinkpad-nixos:~/github/nixos]$ 
+
+Then configure Firefox to use that to open jnlp files
+
 
