@@ -30,6 +30,10 @@
 #     };
 #   );
 
+  # try open source version from here:
+  # https://developer.nvidia.com/blog/nvidia-releases-open-source-gpu-kernel-modules/
+  hardware.nvidia.open = true;
+
   hardware.nvidia = {
 
     # Modesetting is required.
