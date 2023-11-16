@@ -30,10 +30,6 @@
 #     };
 #   );
 
-  # try open source version from here:
-  # https://developer.nvidia.com/blog/nvidia-releases-open-source-gpu-kernel-modules/
-  hardware.nvidia.open = true;
-
   hardware.nvidia = {
 
     # Modesetting is required.
@@ -52,7 +48,7 @@
     # https://github.com/NVIDIA/open-gpu-kernel-modules#compatible-gpus 
     # Only available from driver 515.43.04+
     # Currently alpha-quality/buggy, so false is currently the recommended setting.
-    open = false;
+    open = true;
 
     # Enable the Nvidia settings menu,
 	# accessible via `nvidia-settings`.
