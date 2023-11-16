@@ -6,6 +6,6 @@
     dmidecode
     gnome.gnome-power-manager
     virtiofsd
-    sensors
+    lm_sensors
   ];
 }
