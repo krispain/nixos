@@ -77,6 +77,7 @@
      bintools
      rclone
      whois
+     dig
 
      # GUI tools
      slack
