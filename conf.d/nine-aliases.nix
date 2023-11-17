@@ -1,9 +1,9 @@
 {
 
   environment.ShellAliases = {
-    alias m="ssh cpayne.nine.ch";
-    alias mo="mosh --no-init cpayne.nine.ch";
-    alias gs="git status";
+    m="ssh cpayne.nine.ch";
+    mo="mosh --no-init cpayne.nine.ch";
+    gs="git status";
   };
 
 }
