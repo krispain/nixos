@@ -79,7 +79,6 @@
      dig
 
      # GUI tools
-     authy
      telegram-desktop
      nextcloud-client
      meld
