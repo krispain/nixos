@@ -53,7 +53,6 @@
   environment.systemPackages = with pkgs; [
      # browsers
      chromium
-     brave
      firefox-esr-115-unwrapped
 
      # CLI tools
