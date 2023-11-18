@@ -79,7 +79,6 @@
      dig
 
      # GUI tools
-     bitwarden
      signal-desktop
      authy
      telegram-desktop
