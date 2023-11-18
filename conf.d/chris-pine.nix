@@ -79,7 +79,6 @@
      dig
 
      # GUI tools
-     signal-desktop
      authy
      telegram-desktop
      nextcloud-client
