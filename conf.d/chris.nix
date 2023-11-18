@@ -93,6 +93,7 @@
 
      # Office
      libreoffice
+     hplip
 
      # Images/sound
      gimp-with-plugins
