@@ -79,7 +79,6 @@
      dig
 
      # GUI tools
-     slack
      bitwarden
      signal-desktop
      authy
