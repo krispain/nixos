@@ -87,6 +87,7 @@
      adoptopenjdk-icedtea-web
      openvpn
      glxinfo
+     linphone
 
      # Office
      libreoffice
