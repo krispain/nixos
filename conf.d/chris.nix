@@ -75,6 +75,7 @@
      rclone
      whois
      dig
+     cron
 
      # GUI tools
      slack
@@ -150,6 +151,9 @@
 
   # fwupd
   services.fwupd.enable = true;
+  
+  # cron
+  services.cron.enable = true;
 
   xdg.portal = {
     enable = true;

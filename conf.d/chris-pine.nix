@@ -77,6 +77,7 @@
      rclone
      whois
      dig
+     cron
 
      # GUI tools
      telegram-desktop
@@ -146,6 +147,9 @@
 
   # fwupd
   services.fwupd.enable = true;
+
+  # cron
+  services.cron.enable = true;
 
   xdg.portal = {
     enable = true;
