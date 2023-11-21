@@ -151,7 +151,7 @@
 
   # fwupd
   services.fwupd.enable = true;
-  
+ 
   # cron
   services.cron.enable = true;
 
