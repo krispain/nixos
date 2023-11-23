@@ -1,0 +1,12 @@
+Pinebook specific:
+
+Need a brave via flatpak since it is not in nixos
+
+flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
+
+flatpak install flathub com.brave.Browser
+
+# just use the browser plugin for this
+# flatpak install flathub com.bitwarden.desktop
+
+
