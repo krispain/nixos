@@ -89,6 +89,7 @@
      openvpn
      glxinfo
      linphone
+     mate.atril
 
      # Office
      libreoffice
