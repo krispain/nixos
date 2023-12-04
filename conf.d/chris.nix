@@ -76,6 +76,8 @@
      whois
      dig
      cron
+     bc
+     nmap
 
      # GUI tools
      slack
