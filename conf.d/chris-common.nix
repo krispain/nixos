@@ -90,7 +90,6 @@
 
      # Office
      libreoffice
-     hplipWithPlugin
 
      # Images/sound
      gimp-with-plugins

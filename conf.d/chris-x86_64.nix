@@ -8,6 +8,7 @@
      signal-desktop
      authy
      mplayer
+     hplipWithPlugin
   ];
 
   # gstreamer path setup
