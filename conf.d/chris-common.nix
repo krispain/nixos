@@ -102,6 +102,7 @@
      vlc
      yt-dlp
      id3v2
+     cdrkit
 
      # so we can build our own flatpak, specifically wwphone
      flatpak-builder
