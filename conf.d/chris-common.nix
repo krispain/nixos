@@ -101,6 +101,7 @@
      ffmpeg
      vlc
      yt-dlp
+     id3v2
 
      # so we can build our own flatpak, specifically wwphone
      flatpak-builder
