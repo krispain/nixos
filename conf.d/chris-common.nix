@@ -99,6 +99,7 @@
      audacity
      sox
      ffmpeg
+     ffmpeg-normalize
      vlc
      yt-dlp
      id3v2
