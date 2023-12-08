@@ -13,6 +13,7 @@ signal
 telegram
 
 # Accessories -> Tweaks -> Windows -> Focus on Hover
+# Accessories -> Tweaks -> Window Titlebars -> Double Click -> "Maximize Vertically"
 # Accessories -> Tweaks -> Window Titlebars -> Middle Click -> "Lower"
 # Mate Terminal Prefernces -> Edit -> Profile Preferences" -> Scrolling -> Unlimited
 #							   -> Colours -> "White on Black"
