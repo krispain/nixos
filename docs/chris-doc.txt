@@ -22,7 +22,7 @@ telegram
 
 Chris Payne -> Settings -> Keyboard -> Keyboard Shortcuts -> View and Customize Shortcus -> Custom Shortcuts -> Add Shortcut
 Name:		Mate Screenshot
-Command:	/run/current-system/sw/bin/mate-screenshot -w
+Command:	/run/current-system/sw/bin/mate-screenshot -a
 Shortcut: 	Ctrl-Shift-Fn-Printscreen
 Replace
 
