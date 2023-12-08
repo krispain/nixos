@@ -87,6 +87,7 @@
      glxinfo
      linphone
      mate.atril
+     gparted
 
      # Office
      libreoffice
