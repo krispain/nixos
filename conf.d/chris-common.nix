@@ -88,6 +88,7 @@
      linphone
      mate.atril
      gparted
+     lsof
 
      # Office
      libreoffice
