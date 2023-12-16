@@ -1,0 +1,8 @@
+      ./chris/conf.d/chris-common.nix
+      ./chris/conf.d/chris-x86_64.nix
+      ./chris/conf.d/exceptions.nix
+      ./chris/conf.d/home-nfs.nix
+      ./chris/conf.d/kvm.nix
+      ./chris/conf.d/non-vm.nix
+      ./chris/conf.d/hosts.nix
+      ./chris/conf.d/aliases-common.nix
