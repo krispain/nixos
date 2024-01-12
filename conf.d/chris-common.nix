@@ -79,7 +79,6 @@
      nmap
 
      # GUI tools
-     telegram-desktop
      nextcloud-client
      meld
      adoptopenjdk-icedtea-web

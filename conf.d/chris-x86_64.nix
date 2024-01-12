@@ -6,6 +6,7 @@
      slack
      bitwarden
      signal-desktop
+     telegram-desktop
      authy
      mplayer
      hplipWithPlugin
