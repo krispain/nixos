@@ -164,4 +164,7 @@
   # enable zram swap
   zramSwap.enable = true;
 
+  # Add users bin to path
+  environment.localBinInPath = true;
+
 }
