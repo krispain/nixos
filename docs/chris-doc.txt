@@ -134,6 +134,18 @@ nix-collect-garbage --delete-older-than 7d --dry-run
 # if sane....
 nix-collect-garbage --delete-older-than 7d
 
+# https://nixos.wiki/wiki/Storage_optimization
+# https://specific.solutions.limited/blog/recovering-diskspace-in-nixos
+
+nix-channel --update
+rm /nix/var/nix/gcroots/auto/*
+nix-collect-garbage -d
+
+# this takes time to hardlink files
+nix-store --optimize
+
+
+
 
 # see what has changed between versions:
 
