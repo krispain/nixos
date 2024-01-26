@@ -139,9 +139,12 @@ nix-collect-garbage --delete-older-than 7d
 
 nix-channel --update
 rm /nix/var/nix/gcroots/auto/*
-nix-collect-garbage -d
+nix-collect-garbage --delete-older-than 7d
+# reboot and re clean for files that were held
+nix-collect-garbage --delete-older-than 7d
 
-# this takes time to hardlink files
+
+# this takes time to hardlink filess
 nix-store --optimize
 
 
