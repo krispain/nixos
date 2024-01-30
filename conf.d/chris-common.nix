@@ -106,6 +106,7 @@
      id3v2
      cdrkit
      lame
+     id3lib
 
      # so we can build our own flatpak, specifically wwphone
      flatpak-builder
