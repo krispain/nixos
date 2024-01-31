@@ -107,6 +107,7 @@
      cdrkit
      lame
      id3lib
+     mp3gain
 
      # so we can build our own flatpak, specifically wwphone
      flatpak-builder
