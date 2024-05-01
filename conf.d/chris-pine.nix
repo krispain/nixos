@@ -68,7 +68,6 @@
      file
      wget
      traceroute
-     android-tools
      (lib.hiPrio pkgs.eternal-terminal) # higher priority than egg timer 
      mosh
      fwupd
@@ -82,7 +81,6 @@
      nmap
 
      # GUI tools
-     telegram-desktop
      nextcloud-client
      meld
      adoptopenjdk-icedtea-web
@@ -91,12 +89,8 @@
      linphone
      mate.atril
 
-     # Office
-     libreoffice
-
      # Images/sound
      gimp-with-plugins
-     shotwell
      mate.mate-utils
      mate.eom
      audacity
@@ -122,7 +116,7 @@
      # gst_all_1.gst-vaapi
 
     # Security
-     protonvpn-cli
+     protonvpn
      qbittorrent
      wireguard-tools
 
