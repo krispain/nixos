@@ -53,7 +53,6 @@
   environment.systemPackages = with pkgs; [
      # browsers
      chromium
-     firefox-esr-115-unwrapped
 
      # CLI tools
      mate.mate-terminal
@@ -83,9 +82,7 @@
      # GUI tools
      nextcloud-client
      meld
-     adoptopenjdk-icedtea-web
      openvpn
-     glxinfo
      linphone
      mate.atril
 
@@ -116,8 +113,6 @@
      # gst_all_1.gst-vaapi
 
     # Security
-     protonvpn
-     qbittorrent
      wireguard-tools
 
     # zram for "swap"
