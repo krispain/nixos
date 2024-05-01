@@ -12,7 +12,7 @@
 
   # Enable the Gnome Flashback Desktop Environment.
   services.xserver.displayManager.lightdm.enable = true;
-  services.xserver.desktopManager.gnome.flashback.enableMetacity = true;
+  # services.xserver.desktopManager.gnome.flashback.enableMetacity = true;
 
   # Configure keymap in X11
   services.xserver = {
