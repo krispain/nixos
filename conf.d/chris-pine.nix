@@ -13,6 +13,7 @@
   # Enable the Gnome Flashback Desktop Environment.
   services.xserver.displayManager.lightdm.enable = true;
   # services.xserver.desktopManager.gnome.flashback.enableMetacity = true;
+  services.xserver.desktopManager.cinnamon.enable = true;
 
   # Configure keymap in X11
   services.xserver = {
@@ -60,7 +61,6 @@
      htop
      ncdu
      git
-     et
      parted
      zip
      unzip
@@ -72,7 +72,6 @@
      fwupd
      nvd
      bintools
-     rclone
      whois
      dig
      cron
@@ -98,19 +97,6 @@
 
      # so we can build our own flatpak, specifically wwphone
      flatpak-builder
-
-     # Make gnome great again
-     gnome.gnome-tweaks
-     gnome.gnome-applets
-     networkmanagerapplet
-     gst_all_1.gstreamer
-     gst_all_1.gst-plugins-base
-     gst_all_1.gst-plugins-good
-     gst_all_1.gstreamer.dev
-     gst_all_1.gst-plugins-bad
-     gst_all_1.gst-plugins-ugly
-     gst_all_1.gst-libav
-     # gst_all_1.gst-vaapi
 
     # Security
      wireguard-tools
@@ -151,21 +137,4 @@
   # enable zram swap
   zramSwap.enable = true;
 
-  # gstreamer path setup
-  # https://github.com/NixOS/nixpkgs/issues/207641
-#   environment.sessionVariables = { GST_PLUGIN_SYSTEM_PATH_1_0 = lib.makeSearchPathOutput "lib" "lib/gstreamer-1.0" [
-#				pkgs.gst_all_1.gst-plugins-base
-#				pkgs.pkgsi686Linux.gst_all_1.gst-plugins-base
-#				pkgs.gst_all_1.gst-plugins-good
-#				pkgs.pkgsi686Linux.gst_all_1.gst-plugins-good
-#				pkgs.gst_all_1.gst-plugins-bad
-#				pkgs.pkgsi686Linux.gst_all_1.gst-plugins-bad
-#				pkgs.gst_all_1.gst-plugins-ugly
-#				pkgs.pkgsi686Linux.gst_all_1.gst-plugins-ugly
-#				pkgs.gst_all_1.gst-libav
-#				pkgs.pkgsi686Linux.gst_all_1.gst-libav
-#				pkgs.gst_all_1.gst-vaapi
-#				pkgs.pkgsi686Linux.gst_all_1.gst-vaapi
-#			];
-#  };
 }
