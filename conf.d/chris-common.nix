@@ -177,7 +177,7 @@
   security.sudo.extraRules= [
     {  users = [ "cpayne" ];
       commands = [
-         { command = "wodim" ;
+         { command = "/run/current-system/sw/bin/wodim" ;
            options= [ "NOPASSWD" ]; 
         }
       ];
