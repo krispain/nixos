@@ -173,4 +173,14 @@
   # Add users bin to path
   environment.localBinInPath = true;
 
+  # sudo doesn't need a password to burn cds
+  security.sudo.extraRules= [
+    {  users = [ "cpayne" ];
+      commands = [
+         { command = "wodim" ;
+           options= [ "NOPASSWD" ]; 
+        }
+      ];
+    }
+  ];
 }
