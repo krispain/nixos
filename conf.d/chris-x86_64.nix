@@ -11,6 +11,9 @@
      hplipWithPlugin
   ];
 
+  # run the latest kernel
+  boot.kernelPackages = pkgs.linuxPackages_latest;
+
   # gstreamer path setup
   # https://github.com/NixOS/nixpkgs/issues/207641
   environment.sessionVariables = { GST_PLUGIN_SYSTEM_PATH_1_0 = lib.makeSearchPathOutput "lib" "lib/gstreamer-1.0" [
