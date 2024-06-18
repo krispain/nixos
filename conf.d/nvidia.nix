@@ -48,22 +48,23 @@
     # https://github.com/NVIDIA/open-gpu-kernel-modules#compatible-gpus 
     # Only available from driver 515.43.04+
     # Currently alpha-quality/buggy, so false is currently the recommended setting.
-    open = true;
+    open = false;
 
     # Enable the Nvidia settings menu,
 	# accessible via `nvidia-settings`.
     nvidiaSettings = true;
 
     # Optionally, you may need to select the appropriate driver version for your specific GPU.
-    package = config.boot.kernelPackages.nvidiaPackages.stable;
+    # Lenovo Y50-70 has GeForce GTX 860M so 470 driver
+    package = config.boot.kernelPackages.nvidiaPackages.legacy_470;
   };
 
   hardware.nvidia.prime = {
+    offload = {
+	enable = true;
+	enableOffloadCmd = true;
+    };
     # Make sure to use the correct Bus ID values for your system!
-    reverseSync.enable = true;
-    # Enable if using an external GPU
-    allowExternalGpu = false;
-
     intelBusId = "PCI:0:2:0";
     nvidiaBusId = "PCI:1:0:0";
   };
