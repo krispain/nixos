@@ -11,6 +11,7 @@
      hplipWithPlugin
      gnomeExtensions.system-monitor
      gtop
+     gobject-introspection
   ];
 
   # run the latest kernel
