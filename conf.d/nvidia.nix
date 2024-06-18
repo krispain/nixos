@@ -3,6 +3,11 @@
 
   nixpkgs.config.nvidia.acceptLicense = true;
 
+  environment.systemPackages = with pkgs; [
+    # benchmarking to confirm
+    glmark2
+  ];
+
   # Enable OpenGL
   hardware.opengl = {
     enable = true;
