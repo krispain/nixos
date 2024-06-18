@@ -10,6 +10,7 @@
      mplayer
      hplipWithPlugin
      gnomeExtensions.system-monitor
+     gtop
   ];
 
   # run the latest kernel
