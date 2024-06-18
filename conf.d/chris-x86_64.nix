@@ -9,6 +9,7 @@
      telegram-desktop
      mplayer
      hplipWithPlugin
+     gnome-shell-extension-system-monitor-2
   ];
 
   # run the latest kernel
