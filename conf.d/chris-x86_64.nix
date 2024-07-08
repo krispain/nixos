@@ -12,6 +12,7 @@
      gnomeExtensions.system-monitor
      gtop
      gobject-introspection
+     python312Packages.pip
   ];
 
   # run the latest kernel
