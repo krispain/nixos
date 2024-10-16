@@ -51,7 +51,7 @@
   environment.systemPackages = with pkgs; [
      # browsers
      chromium
-     firefox-esr-115-unwrapped
+     firefox-esr-unwrapped
 
      # CLI tools
      mate.mate-terminal
