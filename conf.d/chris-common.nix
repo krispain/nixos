@@ -34,7 +34,7 @@
   hardware.sane.enable = true; 
   hardware.sane.extraBackends = [ pkgs.sane-airscan ];
 
-  permittedInsecurePackages = [ "qbittorrent-4.6.4" ];
+  permittedInsecurePackages = [ qbittorrent-4.6.4 ];
 
   # Enable sound with pipewire.
   sound.enable = true;
