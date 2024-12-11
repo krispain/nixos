@@ -138,7 +138,7 @@
 
   ];
 
-  permittedInsecurePackages = [
+  environment.permittedInsecurePackages = [
     "qbittorrent-4.6.4"
   ];
           
