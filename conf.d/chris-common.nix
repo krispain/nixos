@@ -132,7 +132,7 @@
     # Security
      protonvpn-cli
      wireguard-tools
-     qbittorrent-4.6.4
+     qbittorrent
 
     # zram for "swap"
     pkgs.zram-generator
