@@ -132,13 +132,14 @@
     # Security
      protonvpn-cli
      wireguard-tools
+     qbittorrent-4.6.4
 
     # zram for "swap"
     pkgs.zram-generator
 
   ];
 
-  environment.permittedInsecurePackages = [
+  permittedInsecurePackages = [
     "qbittorrent-4.6.4"
   ];
           
