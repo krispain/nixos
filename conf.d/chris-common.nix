@@ -139,9 +139,11 @@
 
   ];
 
-#   permittedInsecurePackages = [
-#     "qbittorrent-4.6.4"
-#   ];
+  {
+   permittedInsecurePackages = [
+     "qbittorrent-4.6.4"
+   ];
+  }
           
   # set default editor to neovim
   programs.neovim = {
