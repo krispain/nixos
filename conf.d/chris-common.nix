@@ -34,6 +34,8 @@
   hardware.sane.enable = true; 
   hardware.sane.extraBackends = [ pkgs.sane-airscan ];
 
+  permittedInsecurePackages = [ "qbittorrent-4.6.4" ];
+
   # Enable sound with pipewire.
   sound.enable = true;
   hardware.pulseaudio.enable = false;
@@ -139,7 +141,6 @@
 
   ];
 
-  permittedInsecurePackages = [ "qbittorrent-4.6.4" ];
 
   # set default editor to neovim
   programs.neovim = {
