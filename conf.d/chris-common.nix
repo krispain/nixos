@@ -30,6 +30,10 @@
     openFirewall = true;
   };
 
+  nixpkgs.config.permittedInsecurePackages = [
+    "qbittorrent-4.6.4"
+  ];
+
   # enables support for SANE scanners
   hardware.sane.enable = true; 
   hardware.sane.extraBackends = [ pkgs.sane-airscan ];
