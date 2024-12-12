@@ -117,8 +117,8 @@
      flatpak-builder
 
      # Make gnome great again
-     gnome.gnome-tweaks
-     gnome.gnome-applets
+     gnome-tweaks
+     gnome-applets
      networkmanagerapplet
      gst_all_1.gstreamer
      gst_all_1.gst-plugins-base
