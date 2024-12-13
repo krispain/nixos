@@ -2,7 +2,7 @@
 
 {
   environment.systemPackages = with pkgs; [
-     brave
+     unstable.brave
      slack
      bitwarden
      signal-desktop
