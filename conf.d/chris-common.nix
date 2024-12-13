@@ -133,7 +133,7 @@
      libgtop
 
     # Security
-     protonvpn-cli
+     protonvpn-gui
      wireguard-tools
      qbittorrent
 
