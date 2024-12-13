@@ -9,9 +9,6 @@
     unstable = import <nixos-unstable> {};
   in 
   {
-    environment.systemPackages = with pkgs; [ 
-      unstable.protonvpn-gui 
-    ];
 
   # Set your time zone.
   time.timeZone = "America/Vancouver";
@@ -146,7 +143,7 @@
      libgtop
 
     # Security
-     protonvpn-gui
+     unstable.protonvpn-gui
      wireguard-tools
      qbittorrent
 
