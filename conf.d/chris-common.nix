@@ -51,6 +51,13 @@
 
   };
 
+  # use unstable protonvpn-gui
+  let
+    unstable = import <nixos-unstable> {};
+  in {
+    environment.systemPackages = [ unstable.protonvpn-gui ];
+  }
+
   environment.systemPackages = with pkgs; [
      # browsers
      chromium
