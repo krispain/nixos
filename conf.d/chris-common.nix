@@ -1,6 +1,10 @@
 { config, lib, pkgs, ... }:
 
   # use unstable protonvpn-gui
+  #
+  # Also need to manually add the channel as root:
+  # nix-channel --add https://nixos.org/channels/nixos-unstable nixos-unstable
+  # nix-channel --update
   let
     unstable = import <nixos-unstable> {};
   in 
@@ -8,9 +12,7 @@
     environment.systemPackages = with pkgs; [ 
       unstable.protonvpn-gui 
     ];
-  }
 
-{
   # Set your time zone.
   time.timeZone = "America/Vancouver";
 
