@@ -3,8 +3,11 @@
   # use unstable protonvpn-gui
   let
     unstable = import <nixos-unstable> {};
-  in {
-    environment.systemPackages = [ unstable.protonvpn-gui ];
+  in 
+  {
+    environment.systemPackages = with pkgs; [ 
+      unstable.protonvpn-gui 
+    ];
   }
 
 {
