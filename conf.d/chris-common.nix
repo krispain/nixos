@@ -1,5 +1,12 @@
 { config, lib, pkgs, ... }:
 
+  # use unstable protonvpn-gui
+  let
+    unstable = import <nixos-unstable> {};
+  in {
+    environment.systemPackages = [ unstable.protonvpn-gui ];
+  }
+
 {
   # Set your time zone.
   time.timeZone = "America/Vancouver";
@@ -50,13 +57,6 @@
     #jack.enable = true;
 
   };
-
-  # use unstable protonvpn-gui
-  let
-    unstable = import <nixos-unstable> {};
-  in {
-    environment.systemPackages = [ unstable.protonvpn-gui ];
-  }
 
   environment.systemPackages = with pkgs; [
      # browsers
