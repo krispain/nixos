@@ -69,6 +69,7 @@
      mate.mate-terminal
      neofetch
      htop
+     gtop
      ncdu
      git
      et
