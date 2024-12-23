@@ -1,5 +1,9 @@
 { config, lib, pkgs, ... }:
 
+  let
+    unstable = import <nixos-unstable> {};
+  in
+
 {
   # Set your time zone.
   time.timeZone = "America/Vancouver";
@@ -49,8 +53,8 @@
   environment.systemPackages = with pkgs; [
      # browsers
      chromium
-     brave
-     firefox-esr-115-unwrapped
+     unstable.brave
+     firefox-esr-unwrapped
 
      # CLI tools
      mate.mate-terminal
@@ -125,7 +129,7 @@
      # gst_all_1.gst-vaapi
 
     # Security
-     protonvpn-cli
+     unstable.protonvpn-gui
      qbittorrent
      wireguard-tools
 
