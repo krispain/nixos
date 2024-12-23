@@ -86,7 +86,6 @@
      slack
      bitwarden
      signal-desktop
-     authy
      telegram-desktop
      nextcloud-client
      meld
