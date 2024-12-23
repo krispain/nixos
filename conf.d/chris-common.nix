@@ -1,6 +1,15 @@
 { config, lib, pkgs, ... }:
 
-{
+  # use unstable protonvpn-gui
+  #
+  # Also need to manually add the channel as root:
+  # nix-channel --add https://nixos.org/channels/nixos-unstable nixos-unstable
+  # nix-channel --update
+  let
+    unstable = import <nixos-unstable> {};
+  in 
+  {
+
   # Set your time zone.
   time.timeZone = "America/Vancouver";
 
@@ -60,6 +69,7 @@
      mate.mate-terminal
      neofetch
      htop
+     gtop
      ncdu
      git
      et
@@ -112,6 +122,7 @@
      lame
      id3lib
      mp3gain
+     simple-scan
 
      # so we can build our own flatpak, specifically wwphone
      flatpak-builder
@@ -133,7 +144,7 @@
      libgtop
 
     # Security
-     protonvpn-gui
+     unstable.protonvpn-gui
      wireguard-tools
      qbittorrent
 

@@ -1,8 +1,12 @@
 { config, lib, pkgs, ... }:
 
+  let
+    unstable = import <nixos-unstable> {};
+  in
+
 {
   environment.systemPackages = with pkgs; [
-     brave
+     unstable.brave
      slack
      bitwarden
      signal-desktop
