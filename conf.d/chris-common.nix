@@ -130,6 +130,7 @@
      # Make gnome great again
      gnome-tweaks
      gnome-applets
+     gnomeExtensions.system-monitor
      networkmanagerapplet
      gst_all_1.gstreamer
      gst_all_1.gst-plugins-base
