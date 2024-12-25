@@ -91,6 +91,7 @@
      cron
      bc
      nmap
+     qrrs
 
      # GUI tools
      nextcloud-client
