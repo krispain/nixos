@@ -39,6 +39,12 @@ For VMs also include the file
 ```./chris/conf.d/vm.nix``` 
 to add the vdagent for clipboard copy/paste between host and guest.
 
+Also need to enable the unstable channel for a few packages:
+```bash
+nix-channel --add https://nixos.org/channels/nixos-unstable nixos-unstable
+nix-channel --update
+```
+
 Then run:
 ```nixos-rebuild switch --upgrade```
 
