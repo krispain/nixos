@@ -96,7 +96,6 @@
      slack
      bitwarden
      signal-desktop
-     telegram-desktop
      nextcloud-client
      meld
      adoptopenjdk-icedtea-web
