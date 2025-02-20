@@ -1,5 +1,10 @@
 { config, lib, pkgs, ... }:
 
+  # use unstable protonvpn-gui
+  #
+  # Also need to manually add the channel as root:
+  # nix-channel --add https://nixos.org/channels/nixos-unstable nixos-unstable
+  # nix-channel --update
   let
     unstable = import <nixos-unstable> {};
   in
@@ -19,9 +24,9 @@
   services.xserver.desktopManager.mate.enable = true;
 
   # Configure keymap in X11
-  services.xserver.xkb = {
-    layout = "us";
-    variant = "";
+  services.xserver = {
+    xkb.layout = "us";
+    xkb.variant = "";
   };
 
   # Enable CUPS to print documents.
@@ -32,6 +37,10 @@
     nssmdns4 = true;
     openFirewall = true;
   };
+
+  nixpkgs.config.permittedInsecurePackages = [
+    "qbittorrent-4.6.4"
+  ];
 
   # enables support for SANE scanners
   hardware.sane.enable = true; 
@@ -53,12 +62,13 @@
   environment.systemPackages = with pkgs; [
      # browsers
      chromium
-     unstable.brave
      firefox-esr-unwrapped
 
      # CLI tools
+     mate.mate-terminal
      neofetch
      htop
+     gtop
      ncdu
      git
      et
@@ -80,6 +90,7 @@
      cron
      bc
      nmap
+     qrrs
 
      # GUI tools
      slack
@@ -92,20 +103,31 @@
      openvpn
      glxinfo
      linphone
+     mate.atril
+     gparted
+     lsof
+     gettext
 
      # Office
      libreoffice
-     hplipWithPlugin
 
      # Images/sound
      gimp-with-plugins
      shotwell
+     mate.mate-utils
+     mate.eom
      audacity
      sox
      ffmpeg
+     ffmpeg-normalize
      vlc
-     mplayer
-     yt-dlp
+     unstable.yt-dlp
+     id3v2
+     cdrkit
+     lame
+     id3lib
+     mp3gain
+     simple-scan
 
      # so we can build our own flatpak, specifically wwphone
      flatpak-builder
@@ -160,6 +182,20 @@
 
   # enable zram swap
   zramSwap.enable = true;
+
+  # Add users bin to path
+  environment.localBinInPath = true;
+
+  # sudo doesn't need a password to burn cds
+  security.sudo.extraRules= [
+    {  users = [ "cpayne" ];
+      commands = [
+         { command = "/run/current-system/sw/bin/wodim" ;
+           options= [ "NOPASSWD" ]; 
+        }
+      ];
+    }
+  ];
 
   # gstreamer path setup
   # https://github.com/NixOS/nixpkgs/issues/207641
