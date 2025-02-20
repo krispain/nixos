@@ -10,7 +10,6 @@
      slack
      bitwarden
      signal-desktop
-     telegram-desktop
      mplayer
      hplipWithPlugin
      gnomeExtensions.system-monitor
