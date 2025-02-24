@@ -210,3 +210,11 @@ Then configure Firefox to use that to open jnlp files
 
 
 
+2025/02/20
+
+Flatpak font issue with bubbles (Windows), use this to fix
+https://ubuntu-mate.community/t/font-issue-with-flatpaks/24412/7
+
+flatpak run --command=fc-cache com.usebottles.bottles  -f -v
+
+
