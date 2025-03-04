@@ -9,6 +9,7 @@
       wlrobs
       obs-backgroundremoval
       obs-pipewire-audio-capture
+      droidcam-obs
     ];
     enableVirtualCamera = true;
   };
