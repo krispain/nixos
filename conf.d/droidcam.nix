@@ -2,6 +2,11 @@
 { pkgs, ... }:
 
 {
+  environment.systemPackages = with pkgs; [
+     droidcam
+     v4l-utils
+  ];
+
   # Install OBS Studio with droidcam-obs
   programs.obs-studio = {
     enable = true;
