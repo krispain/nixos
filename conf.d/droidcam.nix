@@ -1,5 +1,5 @@
 # /etc/nixos/configuration.nix
-{ pkgs }:
+{ pkgs, ... }:
 
 {
   # Install OBS Studio with droidcam-obs
