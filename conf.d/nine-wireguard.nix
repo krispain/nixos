@@ -1,7 +1,7 @@
 { pkgs, ... }:
 {
 # setup the routing for the nine wireguard VPNs
-      networking.networkmanager.dispatcherScripts [ { 
+      networking.networkmanager.dispatcherScripts = [ { 
           source = pkgs.writeText "upHook" ''
 #!${pkgs.runtimeShell}
 
