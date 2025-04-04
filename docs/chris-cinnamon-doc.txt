@@ -37,6 +37,48 @@ Terminal -> MATE Terminal
 Settings -> Themes -> Adjust to your mood :-) 
         Set Applications, Icons, Desktop all to "Mint-Y-Aqua"
 
+Move menu to top (Right click, move, select top)
+Add new bottom panel (Right click, add a new panel)
+Right click, panel settings, set height to 24
+Right click, applets add "Window list" to bottom panel
+
+
+Startup Applications
+Disable 
+        dnfdragora-updater
+        
+Add custom startup to disable bluetooth
+Disable Bluetooth
+/run/current-system/bin/rfkill block bluetooth
+Delay 5 seconds
+
+
+Remove some stuff
+
+# Add Panel Launchers
+
+Drag/drop:
+Brave
+Mate Terminal
+
+
+Applets -> Download -> System Monitor
+        -> Manage -> System Monitor
+                -> configure 
+
+Applets -> Download -> World Clock Calendar
+        -> Manage -> World Clock Calendar
+                -> configure 
+Add locations
+        Zurich
+        Dublin
+        UTC
+        Ithaca
+        Saskatoon
+        Vernon
+
+Set format to:  %H:%M:%S (%a)
+
 
 # Some useful links to install stuff
 # Bitwarden brave addon
