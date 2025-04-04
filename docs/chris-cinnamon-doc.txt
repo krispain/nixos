@@ -1,0 +1,215 @@
+# Update hostname in main /etc/nixos/configuration.nix
+
+networking.hostName = "personal-nixos"; # Define your hostname.
+
+
+# Manual commands to run/setup
+authy
+bitwarden
+protonvpn-cli login cpayne
+ssh-keygen -t ed25519
+nextcloud		https://nextcloud.skierswithoutboarders.com
+signal
+telegram
+
+Settings -> Windows -> Titlebar ->  Action on titlebar Double Click -> "Maximize
+ Vertically"
+Settings -> Windows -> Behaviou -> Window Focus Mode -> Sloppy
+Settings -> Keyboard -> Shortcuts -> System -> Custom
+        Lock -> Windows-L (replace)
+        Printscreen
+Name:           Mate Screenshot
+Command:        /run/current-system/sw/bin/mate-screenshot -w
+Shortcut:       Printscreen
+Replace
+
+Battery icon -> Configure -> Display -> Show Percentage and Time Remaining
+
+# Settings -> Preferred applications
+Web -> Brave Web Browser
+Music -> VLC media player
+Video -> VLC media player
+Photos -> Eye of MATE
+Source Code -> Other Application -> GVim
+Plain Text -> GVim
+Terminal -> MATE Terminal
+
+Settings -> Themes -> Adjust to your mood :-) 
+        Set Applications, Icons, Desktop all to "Mint-Y-Aqua"
+
+
+# Some useful links to install stuff
+# Bitwarden brave addon
+https://chrome.google.com/webstore/detail/bitwarden-free-password-m/nngceckbapebfimnlniiiahkandclblb
+
+
+# Very specific Chris things
+# link nextcloud Documents
+
+cd /home/cpayne
+rmdir Documents && ln -s Nextcloud/Documents
+rmdir Music && ln -s Nextcloud/Music
+ln -s Nextcloud/bin
+
+# on personal link Music to host
+rmdir Music && ln -s shared/Music
+
+
+# Setup a couple ssh connections
+
+ssh-copy-id 172.16.1.71 # pi4 in house
+# as root on pi4 do:
+tail -n 1 /home/cpayne/.ssh/authorized_keys >> /root/.ssh/authorized_keys
+ssh-copy-id housing.krispain.com # Zurich
+# as root on housing do:
+tail -n 1 /home/cpayne/.ssh/authorized_keys >> /root/.ssh/authorized_keys
+
+Add to github account :-) 
+clone
+mkdir ~/github && cd ~/github
+git clone git@github.com:krispain/nixos.git
+
+ 
+# Setup Brave
+# Sync from another device
+# Change search to startpage.com
+# Start where you left off
+# Wide address bar
+# always show full url
+
+# for nine VPN, download config files from protondrive
+rename to be interface names
+connect using
+wg-quick up <interface>.conf
+
+
+
+
+
+# Note about undoing 
+# https://superuser.com/questions/1604694/how-to-update-every-package-on-nixos
+
+nixos-rebuild switch --upgrade
+
+
+# To back out of full update use:
+nix-channel --rollback
+nixos-rebuild switch
+
+# Confirm latest channel:
+# https://nixos.org/manual/nixos/stable/#sec-upgrading
+
+# Update that channel
+nix-channel --update
+
+# the run usual update
+nixos-rebuild switch
+
+
+# to list gernarions available:
+nix-env --list-generations --profile /nix/var/nix/profiles/system
+
+# To set a working one default, once you boot into it successfully:
+/run/current-system/bin/switch-to-configuration boot
+
+
+
+# package searching:
+
+$ nix repl
+Welcome to Nix 2.13.5. Type :? for help.
+nix-repl> :load <nixpkgs>
+Added 19212 variables.
+
+nix-repl> 
+
+# Clean up unused stuff
+
+nix-collect-garbage --delete-older-than 7d --dry-run 
+# if sane....
+nix-collect-garbage --delete-older-than 7d
+
+# https://nixos.wiki/wiki/Storage_optimization
+# https://specific.solutions.limited/blog/recovering-diskspace-in-nixos
+
+nix-channel --update
+rm /nix/var/nix/gcroots/auto/*
+nix-collect-garbage --delete-older-than 7d
+# reboot and re clean for files that were held
+nix-collect-garbage --delete-older-than 7d
+# agressive
+nix-collect-garbage -d
+
+
+# this takes time to hardlink filess
+nix-store --optimize
+
+
+
+
+# see what has changed between versions:
+
+nvd diff /nix/var/nix/profiles/system-{134,135}-link
+
+For just the most recent changes aka the last update:
+
+nvd diff $(ls -trd /nix/var/nix/profiles/*-link|tail -n 2)
+
+
+
+2023/11/02
+
+Solved xorg QEMU VM issue:
+https://ubuntuforums.org/showthread.php?t=2486167&p=14158211#post14158211
+
+- Changing the video driver from "QXL" to "Virtio"
+- Enabling 3D acceleration
+- (Click "Apply")
+- Enabling OpenGL in the "Display Spice" tab
+- Setting "Listen type" to "None" (same tab)
+- (Click "Apply" again)
+
+
+2023/11/07
+
+To run the old java consoles, this is what is needed:
+
+Setup Firefox to connect to them by
+
+about:config
+
+security.tls.version.min	1
+
+
+Then do this so the javaws can connect:
+
+
+[cpayne@thinkpad-nixos:~]$ cat /home/cpayne/.config/icedtea-web/disabled_tls.properties
+jdk.tls.disabledAlgorithms=SSLv3
+jdk.jar.disabledAlgorithms=MD2
+
+[cpayne@thinkpad-nixos:~]$ javaws -J-Djava.security.properties=/home/cpayne/.config/icedtea-web/disabled_tls.properties ~/Downloads/jviewer.jnlp
+
+2023/11/14
+
+Setup script 
+
+[cpayne@thinkpad-nixos:~/github/nixos]$ cat ~/bin/javaws-nixos.sh 
+#!/bin/sh
+
+javaws -J-Djava.security.properties=/home/cpayne/.config/icedtea-web/disabled_tls.properties "${1}"
+
+[cpayne@thinkpad-nixos:~/github/nixos]$ 
+
+Then configure Firefox to use that to open jnlp files
+
+
+
+2025/02/20
+
+Flatpak font issue with bubbles (Windows), use this to fix
+https://ubuntu-mate.community/t/font-issue-with-flatpaks/24412/7
+
+flatpak run --command=fc-cache com.usebottles.bottles  -f -v
+
+
