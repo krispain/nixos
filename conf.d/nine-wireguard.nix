@@ -19,7 +19,7 @@ IF_IDS=(
 
 case $2 in
   up)
-    for ifdev in "${!IF_IDS[@]}"; do
+    for ifdev in "${!IF_IDS[\@]}"; do
       if ip link show dev "${ifdev}" &>> /dev/null; then
         ip route flush table "${IF_IDS[$ifdev]}" || true
         ip -4 route show | grep default | sed -E "s/$/ table ${IF_IDS[$ifdev]}/" | xargs -L1 ip route add
