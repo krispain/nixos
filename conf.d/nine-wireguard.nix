@@ -6,5 +6,5 @@
           source = ./scripts/dispatcher.sh;
 	  type = "basic";
      	} 
-     ]
+     ];
 }
