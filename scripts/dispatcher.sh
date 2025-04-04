@@ -1,4 +1,4 @@
-#!${pkgs.runtimeShell}
+#!/run/current-system/sw/bin/bash
 
 set -o errexit
 set -o pipefail
