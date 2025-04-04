@@ -1,11 +1,8 @@
 { pkgs, ... }:
 {
 # setup the routing for the nine wireguard VPNs
-  services.networkd-dispatcher = {
-    enable = true;
-    rules."route-wg-vpn" = {
-      onState = ["routable" "off"];
-      script = ''
+      networking.networkmanager.dispatcherScripts [ { 
+          source = pkgs.writeText "upHook" ''
 #!${pkgs.runtimeShell}
 
 set -o errexit
@@ -19,7 +16,7 @@ IF_IDS=(
 
 case $2 in
   up)
-    for ifdev in "${!IF_IDS[\@]}"; do
+    for ifdev in "${!IF_IDS[@]}"; do
       if ip link show dev "${ifdev}" &>> /dev/null; then
         ip route flush table "${IF_IDS[$ifdev]}" || true
         ip -4 route show | grep default | sed -E "s/$/ table ${IF_IDS[$ifdev]}/" | xargs -L1 ip route add
@@ -42,7 +39,6 @@ case $2 in
     :
   ;;
 esac
-      '';
-    };
-  };
+         '';
+     } ]
 }
