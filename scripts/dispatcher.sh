@@ -34,6 +34,7 @@ case $2 in
       wg_nine | wg_nine34)
         ${IP} rule delete priority "${IF_IDS[$1]}" || true
         ${IP} route flush table "${IF_IDS[$1]}"
+        ${IP} -4 route show | ${GREP} default | ${AWK} '{print $3}' | xargs -L1 ${IP} route del "${IF_IPS[$ifdev]}" via 
       ;;
       *)
         :
