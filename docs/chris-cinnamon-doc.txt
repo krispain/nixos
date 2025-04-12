@@ -44,12 +44,10 @@ Right click, applets add "Window list" to bottom panel
 
 
 Startup Applications
-Disable 
-        dnfdragora-updater
         
 Add custom startup to disable bluetooth
 Disable Bluetooth
-/run/current-system/bin/rfkill block bluetooth
+/run/current-system/sw/bin/rfkill block bluetooth
 Delay 5 seconds
 
 
