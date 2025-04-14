@@ -43,13 +43,15 @@ Right click, panel settings, set height to 24
 Right click, applets add "Window list" to bottom panel
 
 
-Startup Applications
+# Startup Applications
         
-Add custom startup to disable bluetooth
-Disable Bluetooth
-/run/current-system/sw/bin/rfkill block bluetooth
+# Add custom startup to disable bluetooth
+Shutdown Bluetooth
+/run/current-system/sw/bin/bluetoothctl power off
 Delay 5 seconds
 
+#  Custom staart for Sharing for audio
+/run/current-system/sw/bin/pactl load-module module-native-protocol-tcp auth-ip-acl=127.0.0.1
 
 Remove some stuff
 
