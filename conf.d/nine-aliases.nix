@@ -12,7 +12,8 @@
     es34="ssh cpayne-es34.nine.ch";
     es34m="mosh --no-init cpayne-es34.nine.ch";
     es34e="et cpayne-es34.nine.ch";
-    console="javaws -J-Djava.security.properties=/home/cpayne/.config/icedtea-web/disabled_tls.properties";
+    rmm="openvpn --config /home/cpayne/.nine/nettools-vpn/cpayne.nine.ch.ovpn";
+    rmm-es34="openvpn --config /home/cpayne/.nine/nettools-vpn-es34/cpayne.nine.ch.ovpn";
   };
 
 }
