@@ -84,6 +84,11 @@ Set format to:  %H:%M:%S (%a)
 # Bitwarden brave addon
 https://chrome.google.com/webstore/detail/bitwarden-free-password-m/nngceckbapebfimnlniiiahkandclblb
 
+# allow for searching local bin
+
+cd ~/.local/
+ln -s ../bin
+
 
 # Very specific Chris things
 # link nextcloud Documents
