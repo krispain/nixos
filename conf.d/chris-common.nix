@@ -113,6 +113,7 @@
      shotwell
      mate.mate-utils
      mate.eom
+     flameshot
      audacity
      sox
      ffmpeg
