@@ -104,6 +104,7 @@
      gparted
      lsof
      gettext
+     monitorets
 
      # Office
      libreoffice
