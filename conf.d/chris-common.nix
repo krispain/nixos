@@ -106,6 +106,7 @@
      lsof
      gettext
      monitorets
+     system-config-printer
 
      # Office
      libreoffice
