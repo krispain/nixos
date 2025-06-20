@@ -11,7 +11,6 @@
      bitwarden
      signal-desktop
      mplayer
-     hplipWithPlugin
      gnomeExtensions.system-monitor
      gtop
      gobject-introspection

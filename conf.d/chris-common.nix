@@ -30,9 +30,6 @@
     xkb.variant = "";
   };
 
-  # Enable CUPS to print documents.
-  services.printing.enable = true;
-
   services.avahi = {
     enable = true;
     nssmdns4 = true;
@@ -106,7 +103,6 @@
      lsof
      gettext
      monitorets
-     system-config-printer
      alarm-clock-applet
 
      # Office
