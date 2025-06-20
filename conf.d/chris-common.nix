@@ -90,6 +90,7 @@
      bc
      nmap
      qrrs
+     inetutils
 
      # GUI tools
      nextcloud-client
