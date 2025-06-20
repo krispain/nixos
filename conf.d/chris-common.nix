@@ -107,6 +107,7 @@
      gettext
      monitorets
      system-config-printer
+     alarm-clock-applet
 
      # Office
      libreoffice
