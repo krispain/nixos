@@ -151,6 +151,7 @@
      unstable.protonvpn-gui
      wireguard-tools
      qbittorrent
+     cloudflared
 
     # zram for "swap"
     pkgs.zram-generator
