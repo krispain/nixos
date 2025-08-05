@@ -91,6 +91,7 @@
      nmap
      qrrs
      inetutils
+     lshw
 
      # GUI tools
      nextcloud-client
