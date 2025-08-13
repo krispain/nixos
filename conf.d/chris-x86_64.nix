@@ -15,6 +15,7 @@
      gtop
      gobject-introspection
      printrun
+     cloudflared
   ];
 
   # run the latest kernel
