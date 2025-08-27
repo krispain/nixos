@@ -1,6 +1,6 @@
 { pkgs, ... }:
 {
-  environment.systemPackages = [
+  environment.systemPackages = with pkgs; [
     clamav
   ];
   services.clamav.daemon.enable = true;
