@@ -6,7 +6,6 @@
   services.clamav = {
     daemon.enable = true;
     updater.enable = true;
-    clamonacc.enable = true;
 
     daemon.settings = {
         OnAccessPrevention = true;
