@@ -8,11 +8,10 @@
     updater.enable = true;
 
     daemon.settings = {
-        ScanOnAccess = yes;
+        ScanOnAccess = "yes";
         OnAccessIncludePath = "/home/cpayne/Downloads";
 	OnAccessExcludeUname = "clamav";
-        OnAccessPrevention = yes;
-        OnAccessDisableDDD = yes;
+        OnAccessPrevention = true;
     };
   };
 
