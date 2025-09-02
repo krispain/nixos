@@ -19,7 +19,7 @@
         description = "Start the clamav on access scanner.";
         serviceConfig = {
             Type = "notify";
-            User = "clamav";
+            User = "root";
             ExecStart = ''${pkgs.clamav}/bin/clamonacc''; 
             ExecStop = ''killall -2 clamacc'';
         };
