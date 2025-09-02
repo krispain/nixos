@@ -18,7 +18,7 @@
         after = [ "clamav-daemom.target" ];
         description = "Start the clamav on access scanner.";
         serviceConfig = {
-            Type = "notify";
+            Type = "forking";
             User = "root";
             ExecStart = ''/run/current-system/sw/bin/clamonacc''; 
             ExecStop = ''killall -2 clamonacc'';
