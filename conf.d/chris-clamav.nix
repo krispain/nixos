@@ -20,8 +20,8 @@
         serviceConfig = {
             Type = "notify";
             User = "root";
-            ExecStart = ''${pkgs.clamav}/bin/clamonacc''; 
-            ExecStop = ''killall -2 clamacc'';
+            ExecStart = ''/run/current-system/sw/bin/clamonacc''; 
+            ExecStop = ''killall -2 clamonacc'';
         };
    };
 
