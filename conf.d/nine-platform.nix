@@ -5,6 +5,7 @@
      bazel
      go
      google-cloud-sdk
+     kubectl
   ];
 
 }
