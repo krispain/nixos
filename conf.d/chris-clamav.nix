@@ -13,17 +13,18 @@
         OnAccessPrevention = true;
     };
   };
-    systemd.services.clamonacc = {
-        wantedBy = [ "multi-user.target" ];
-        after = [ "clamav-daemom.target" ];
-        description = "Start the clamav on access scanner.";
-        serviceConfig = {
-            Type = "forking";
-            User = "root";
-            ExecStart = ''${pkgs.clamav}/bin/clamonacc -v''; 
-            ExecStop = ''killall -2 clamonacc'';
-        };
+  systemd.services.clamonacc = {
+      wantedBy = [ "multi-user.target" ];
+      after = [ "clamav-daemom.target" ];
+      description = "Start the clamav on access scanner.";
+      serviceConfig = {
+          Type = "forking";
+          User = "root";
+          ExecStart = ''${pkgs.clamav}/bin/clamonacc -v''; 
+          ExecStop = ''killall -2 clamonacc'';
+      };
    };
-
+   users.users.cpayne.createHome = true;
+   users.users.cpayne.homeMode = "755";
 
 }
