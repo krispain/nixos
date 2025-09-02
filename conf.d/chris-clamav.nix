@@ -20,7 +20,7 @@
         serviceConfig = {
             Type = "forking";
             User = "root";
-            ExecStart = ''${pkgs.clamav}/bin/clamonacc''; 
+            ExecStart = ''${pkgs.clamav}/bin/clamonacc -v''; 
             ExecStop = ''killall -2 clamonacc'';
         };
    };
