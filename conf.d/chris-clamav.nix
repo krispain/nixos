@@ -19,7 +19,7 @@
       requires = [ "clamav-daemon.service" ];
       description = "The clamav on access scanner.";
       serviceConfig = {
-          Type = "exec";
+          Type = "forking";
           User = "root";
           ExecStart = ''${pkgs.clamav}/bin/clamonacc''; 
           SocketType = "unix";
