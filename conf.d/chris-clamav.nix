@@ -21,7 +21,6 @@
           Type = "oneshot";
           User = "root";
           ExecStart = ''${pkgs.clamav}/bin/clamonacc -v''; 
-          ExecStop = ''killall -2 clamonacc'';
       };
    };
    users.users.cpayne.createHome = true;
