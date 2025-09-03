@@ -15,9 +15,9 @@
   };
   systemd.services.clamonacc = {
       wantedBy = [ "multi-user.target" ];
-      after = [ "clamav-daemom.target" ];
-      wants = [ "clamav-daemom.target" ];
-      description = "Start the clamav on access scanner.";
+      after = [ "clamav-daemon.target" ];
+      requires = [ "clamav-daemon.target" ];
+      description = "The clamav on access scanner.";
       serviceConfig = {
           Type = "forking";
           User = "root";
