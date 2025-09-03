@@ -18,12 +18,12 @@
       after = [ "clamav-daemon.service" ];
       requires = [ "clamav-daemon.service" ];
       description = "The clamav on access scanner.";
-      sockettype = "unix";
-      socketpath = "/run/clamav/clamd.ctl";
       serviceConfig = {
           Type = "forking";
           User = "root";
           ExecStart = ''${pkgs.clamav}/bin/clamonacc''; 
+          SocketType = "unix";
+          SocketPath = "/run/clamav/clamd.ctl";
       };
    };
    users.users.cpayne.createHome = true;
