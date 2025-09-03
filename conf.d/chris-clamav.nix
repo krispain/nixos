@@ -21,7 +21,7 @@
       serviceConfig = {
           Type = "forking";
           User = "root";
-	  ExecPreStart = ''sleep 5'';
+	  ExecStartPre = ''sleep 5'';
           ExecStart = ''${pkgs.clamav}/bin/clamonacc''; 
           SocketType = "unix";
           SocketPath = "/run/clamav/clamd.ctl";
