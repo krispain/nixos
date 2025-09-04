@@ -13,6 +13,7 @@
         OnAccessPrevention = true;
 	TCPSocket = "3310";
 	TCPAddr = "localhost";
+	LocalSocket = "";
     };
   };
   systemd.services.clamonacc = {
