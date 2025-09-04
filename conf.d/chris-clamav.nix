@@ -12,7 +12,7 @@
 	OnAccessExcludeUname = "clamav";
         OnAccessPrevention = true;
 	TCPSocket = "3310";
-	TCPAddr "localhost";
+	TCPAddr = "localhost";
     };
   };
   systemd.services.clamonacc = {
