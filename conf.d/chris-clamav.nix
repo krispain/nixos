@@ -11,8 +11,6 @@
         OnAccessIncludePath = "/home/cpayne/Downloads";
 	OnAccessExcludeUname = "clamav";
         OnAccessPrevention = true;
-	TCPSocket = "3310";
-	TCPAddr = "localhost";
     };
   };
   systemd.services.clamonacc = {
@@ -24,8 +22,7 @@
           Type = "forking";
           User = "root";
           ExecStart = ''${pkgs.clamav}/bin/clamonacc''; 
-          SocketType = "tcp";
-          SocketPath = "127.0.0.1:3310";
+	  Restart = "always";
       };
    };
    users.users.cpayne.createHome = true;
