@@ -23,7 +23,7 @@
           User = "root";
           ExecStart = ''${pkgs.clamav}/bin/clamonacc''; 
 	  Restart = "always";
-	  RestartSec = "200ms";
+	  RestartSec = "2s";
       };
    };
    users.users.cpayne.createHome = true;
