@@ -64,7 +64,6 @@
      firefox-esr-unwrapped
 
      # CLI tools
-     mate.mate-terminal
      neofetch
      htop
      gtop
