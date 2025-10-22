@@ -37,7 +37,6 @@
   };
 
   nixpkgs.config.permittedInsecurePackages = [
-    "electron-33.4.11"
     "mbedtls-2.28.10"
   ];
 
