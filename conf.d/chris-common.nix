@@ -149,7 +149,6 @@
 
      # cinnamon
      libgtop
-     glibtop
      gobject-introspection
      glib
 
