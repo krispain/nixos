@@ -149,6 +149,9 @@
 
      # cinnamon
      libgtop
+     glibtop
+     gobject-introspection
+     glib
 
     # Security
      unstable.protonvpn-gui
