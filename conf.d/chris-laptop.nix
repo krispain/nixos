@@ -1,4 +1,12 @@
+# /etc/nixos/configuration.nix
+{ pkgs, ... }:
+
 {
+  # needed for https://github.com/vietanhdev/ThinkUtils
+  environment.systemPackages = with pkgs; [
+     polkit
+  ];
+
   services.power-profiles-daemon.enable = false;
   services.tlp = {
       enable = true;
