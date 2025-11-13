@@ -10,6 +10,10 @@
   in 
   {
 
+  # use lix
+  # https://lix.systems/add-to-config/
+  nix.package = pkgs.lixPackageSets.stable.lix;
+
   # Set your time zone.
   time.timeZone = "America/Vancouver";
 
@@ -145,6 +149,8 @@
 
      # cinnamon
      libgtop
+     gobject-introspection
+     glib
 
     # Security
      unstable.protonvpn-gui
