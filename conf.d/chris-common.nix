@@ -153,7 +153,7 @@
      glib
 
     # Security
-     unstable.protonvpn-gui
+     protonvpn-gui
      wireguard-tools
      qbittorrent
      cloudflared
