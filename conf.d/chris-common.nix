@@ -100,7 +100,7 @@
      meld
      adoptopenjdk-icedtea-web
      openvpn
-     glxinfo
+     mesa-demos
      linphone
      mate.atril
      gparted
