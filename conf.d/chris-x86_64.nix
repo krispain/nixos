@@ -8,7 +8,7 @@
   environment.systemPackages = with pkgs; [
      brave
      slack
-     bitwarden
+     bitwarden-desktop
      signal-desktop
      mplayer
      gnomeExtensions.system-monitor
