@@ -22,7 +22,7 @@ let
 in
 appimageTools.wrapType2 rec {
   inherit pname;
-  version = "0.9.8-beta";
+  version = "0.11.2";
 
   src = fetchurl {
     url = "https://github.com/ubports/ubports-installer/releases/download/${version}/ubports-installer_${version}_linux_x86_64.AppImage";
