@@ -5,6 +5,7 @@
   environment.systemPackages = with pkgs; [
      virt-manager
      dnsmasq
+     spice-gtk
   ];
   
   # for Windows VM
