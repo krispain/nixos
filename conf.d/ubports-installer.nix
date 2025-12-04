@@ -1,51 +1,39 @@
-{ lib, appimageTools, fetchurl, makeDesktopItem }:
+# /etc/nixos/configuration.nix
+{ pkgs, ... }:
 
-let
-  pname = "ubports-installer";
-
-  icon = ./ubports-mascot.jpg;
-
-  desktopItems = [
-    (makeDesktopItem {
-      name = pname;
-      inherit icon;
-      desktopName = "Ubuntu Touch Installer";
-      genericName = "GUI for installing Ubuntu Touch";
-      exec = "@out@/bin/ubports-installer";
-      comment = "GUI for installing Ubuntu Touch";
-      categories = [ "System" ];
-      startupNotify = false;
-      keywords = [ "system" "os" "network" "ubuntu" "touch" "mobile" ];
-    })
-  ];
-
-in
-appimageTools.wrapType2 rec {
-  inherit pname;
-  version = "0.11.2";
-
-  src = fetchurl {
-    url = "https://github.com/ubports/ubports-installer/releases/download/${version}/ubports-installer_${version}_linux_x86_64.AppImage";
-    hash = "sha256-oUQ4AaRiUMeklyI4xzH+krXyedqpLiA9obo5uO8JJak=";
-  };
-
-  extraInstallCommands = ''
-    mv $out/bin/${pname}-${version} $out/bin/${pname}
-  '' + lib.concatMapStringsSep "\n "
-    (e: ''
-      install -Dm444 -t $out/share/applications ${e}/share/applications/*.desktop
-    '')
-    desktopItems
-  + ''
-    install -Dm444 ${icon} $out/share/icons/apps/${pname}.jpg;
-
-    for f in $out/share/applications/*.desktop; do
-      substituteInPlace $f --subst-var out
-    done
+{
+  services.udev.extraRules = ''
+    SUBSYSTEM=="usb", ATTRS{idVendor}=="0e79", MODE="0666", GROUP="plugdev"
+    SUBSYSTEM=="usb", ATTRS{idVendor}=="0502", MODE="0666", GROUP="plugdev"
+    SUBSYSTEM=="usb", ATTRS{idVendor}=="0b05", MODE="0666", GROUP="plugdev"
+    SUBSYSTEM=="usb", ATTRS{idVendor}=="413c", MODE="0666", GROUP="plugdev"
+    SUBSYSTEM=="usb", ATTRS{idVendor}=="0489", MODE="0666", GROUP="plugdev"
+    SUBSYSTEM=="usb", ATTRS{idVendor}=="091e", MODE="0666", GROUP="plugdev"
+    SUBSYSTEM=="usb", ATTRS{idVendor}=="18d1", MODE="0666", GROUP="plugdev"
+    SUBSYSTEM=="usb", ATTRS{idVendor}=="0bb4", MODE="0666", GROUP="plugdev"
+    SUBSYSTEM=="usb", ATTRS{idVendor}=="12d1", MODE="0666", GROUP="plugdev"
+    SUBSYSTEM=="usb", ATTRS{idVendor}=="24e3", MODE="0666", GROUP="plugdev"
+    SUBSYSTEM=="usb", ATTRS{idVendor}=="2116", MODE="0666", GROUP="plugdev"
+    SUBSYSTEM=="usb", ATTRS{idVendor}=="0482", MODE="0666", GROUP="plugdev"
+    SUBSYSTEM=="usb", ATTRS{idVendor}=="17ef", MODE="0666", GROUP="plugdev"
+    SUBSYSTEM=="usb", ATTRS{idVendor}=="1004", MODE="0666", GROUP="plugdev"
+    SUBSYSTEM=="usb", ATTRS{idVendor}=="22b8", MODE="0666", GROUP="plugdev"
+    SUBSYSTEM=="usb", ATTRS{idVendor}=="0409", MODE="0666", GROUP="plugdev"
+    SUBSYSTEM=="usb", ATTRS{idVendor}=="2080", MODE="0666", GROUP="plugdev"
+    SUBSYSTEM=="usb", ATTRS{idVendor}=="0955", MODE="0666", GROUP="plugdev"
+    SUBSYSTEM=="usb", ATTRS{idVendor}=="2257", MODE="0666", GROUP="plugdev"
+    SUBSYSTEM=="usb", ATTRS{idVendor}=="10a9", MODE="0666", GROUP="plugdev"
+    SUBSYSTEM=="usb", ATTRS{idVendor}=="1d4d", MODE="0666", GROUP="plugdev"
+    SUBSYSTEM=="usb", ATTRS{idVendor}=="0471", MODE="0666", GROUP="plugdev"
+    SUBSYSTEM=="usb", ATTRS{idVendor}=="04da", MODE="0666", GROUP="plugdev"
+    SUBSYSTEM=="usb", ATTRS{idVendor}=="05c6", MODE="0666", GROUP="plugdev"
+    SUBSYSTEM=="usb", ATTRS{idVendor}=="1f53", MODE="0666", GROUP="plugdev"
+    SUBSYSTEM=="usb", ATTRS{idVendor}=="04e8", MODE="0666", GROUP="plugdev"
+    SUBSYSTEM=="usb", ATTRS{idVendor}=="04dd", MODE="0666", GROUP="plugdev"
+    SUBSYSTEM=="usb", ATTRS{idVendor}=="0fce", MODE="0666", GROUP="plugdev"
+    SUBSYSTEM=="usb", ATTRS{idVendor}=="0930", MODE="0666", GROUP="plugdev"
+    SUBSYSTEM=="usb", ATTRS{idVendor}=="19d2", MODE="0666", GROUP="plugdev"
+    SUBSYSTEM=="usb", ATTRS{idVendor}=="2ae5", MODE="0666", GROUP="plugdev"
+    SUBSYSTEM=="usb", ATTRS{idVendor}=="2a45", MODE="0666", GROUP="plugdev"
   '';
-
-  meta = with lib; {
-    description = "Ubuntu Touch installer";
-    license = licenses.free;
-  };
 }
