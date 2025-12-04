@@ -134,8 +134,8 @@
      # so we can build our own flatpak, specifically wwphone
      flatpak-builder
 
-     # for npm
-     nodejs_22
+     # for running appimages
+     appimage-run
 
      # Make gnome great again
      gnome-tweaks
