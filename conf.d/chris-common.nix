@@ -134,6 +134,9 @@
      # so we can build our own flatpak, specifically wwphone
      flatpak-builder
 
+     # for npm
+     nodejs_24
+
      # Make gnome great again
      gnome-tweaks
      gnome-applets
