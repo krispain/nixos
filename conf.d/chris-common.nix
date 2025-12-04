@@ -135,7 +135,7 @@
      flatpak-builder
 
      # for npm
-     nodejs_24
+     nodejs_22
 
      # Make gnome great again
      gnome-tweaks
