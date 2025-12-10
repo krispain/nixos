@@ -80,6 +80,7 @@
      wget
      traceroute
      android-tools
+     pmbootstrap
      (lib.hiPrio pkgs.eternal-terminal) # higher priority than egg timer 
      mosh
      fwupd
