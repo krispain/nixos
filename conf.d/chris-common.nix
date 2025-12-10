@@ -101,7 +101,7 @@
      adoptopenjdk-icedtea-web
      openvpn
      mesa-demos
-     linphone
+     # linphone
      mate.atril
      gparted
      lsof
