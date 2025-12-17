@@ -95,6 +95,7 @@
      qrrs
      inetutils
      lshw
+     speedtest-cli
 
      # GUI tools
      nextcloud-client
