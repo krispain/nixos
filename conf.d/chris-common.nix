@@ -132,6 +132,7 @@
      id3lib
      mp3gain
      simple-scan
+     pulseaudio
 
      # so we can build our own flatpak, specifically wwphone
      flatpak-builder
