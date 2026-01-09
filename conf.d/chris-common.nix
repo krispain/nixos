@@ -96,7 +96,7 @@
      inetutils
      lshw
      speedtest-cli
-     nodejs_24
+     hugo
 
      # GUI tools
      nextcloud-client
