@@ -12,7 +12,7 @@ let
     name = "openvpn-2.4.12";
     src = openvpnSource;
 
-    buildInputs = with pkgs; [ openssl curl lz4 iproute2 ];
+    buildInputs = with pkgs; [ openssl curl lz4 net-tools ];
 
     configurePhase = ''
       ./configure --prefix=$out
