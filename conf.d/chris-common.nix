@@ -168,9 +168,6 @@
     # zram for "swap"
     pkgs.zram-generator
 
-    # for openvpn 2.4 build
-    pkgs.lz4
-
   ];
 
 
