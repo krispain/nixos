@@ -1,4 +1,9 @@
 { config, pkgs, ... }:
+{
+  environment.systemPackages = [
+    pkgs.lz4
+  ];
+}
 
 let
   # Fetch and unpack the OpenVPN source tarball
@@ -27,8 +32,5 @@ let
 in
 {
   # Define the package in your system configuration
-  environment.systemPackages = [ 
-    openvpn 
-    pkgs.lz4
-  ];
+  environment.systemPackages = [ openvpn ];
 }
