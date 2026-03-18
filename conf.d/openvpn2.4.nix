@@ -12,8 +12,8 @@ let
     name = "openvpn-2.4.12";
     src = openvpnSource;
 
-    buildInputs = with pkgs; [ openssl curl lz4 net-tools lzo ];
-
+    buildInputs = with pkgs; [ openssl curl lz4 net-tools lzo libpam-wrapper];
+ 
     configurePhase = ''
       ./configure --prefix=$out
     '';
