@@ -1,3 +1,8 @@
+{ pkgs, ... }:
+{
+  environment.systemPackages = with pkgs; [
+    clamav
+  ];
 {
   {
     stdenv,
