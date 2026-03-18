@@ -27,5 +27,8 @@ let
 in
 {
   # Define the package in your system configuration
-  environment.systemPackages = [ openvpn ];
+  environment.systemPackages = [ 
+    openvpn 
+    pkgs.lz4
+  ];
 }
