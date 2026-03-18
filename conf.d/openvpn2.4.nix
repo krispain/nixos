@@ -4,7 +4,7 @@ let
   # Fetch and unpack the OpenVPN source tarball
   openvpnSource = builtins.fetchTarball {
     url = "https://build.openvpn.net/downloads/releases/openvpn-2.4.12.tar.gz";
-    sha256 = "7571c7663698f9ec25d5721aa7addafaba1107e2c9770d1bacf805a15a565d53";
+    sha256 = "sha256-4pXF38eL30PCNKtaZeWtT3H7JGuSKTPeeAmdkM4AGdQ=";
   };
 
   # Build the OpenVPN package
