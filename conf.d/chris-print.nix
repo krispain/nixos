@@ -12,7 +12,7 @@
     deviceUri = "ipp://172.16.1.48"; # <- Set print URI here
     #description = "";
     #location = "";
-    model = "HP/hp-deskjet_3650.ppd.gz"; 
+    model = "HP/hp-officejet_4650_series.ppd.gz"; 
     ppdOptions = {
       Duplex = "DuplexNoTumble";
       PageSize = "Letter";
