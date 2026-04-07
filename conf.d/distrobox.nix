@@ -4,18 +4,23 @@
      distrobox
   ];
 
-  virtualisation = {
-    containers.enable = true;
-    podman = {
-      enable = true;
-      dockerCompat = true;
-      defaultNetwork.settings.dns_enabled = true; 
+  virtualisation.docker = {
+    enable = true;
+    # Set up resource limits
+    daemon.settings = {
+      experimental = true;
+      default-address-pools = [
+        {
+          base = "172.30.0.0/16";
+          size = 24;
+        }
+      ];
     };
   };
-  
+
   users.users.cpayne = {
     extraGroups = [
-      "podman"
+      "docker"
     ];
   };
 
