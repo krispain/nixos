@@ -97,6 +97,7 @@
      lshw
      speedtest-cli
      hugo
+     tcpdump
 
      # GUI tools
      nextcloud-client
