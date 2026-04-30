@@ -6,7 +6,7 @@
 
   services.nextdns = {
     enable = true;
-    arguments = [ "-config" "${config.networking.hostName}-4b8d4c" "-cache-size" "10MB" ];
+    arguments = [ "-config" "4b8d4c" "-cache-size" "10MB" ];
   };
 
   systemd.services.nextdns-activate = {
