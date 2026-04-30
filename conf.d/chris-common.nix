@@ -127,7 +127,7 @@
      ffmpeg
      ffmpeg-normalize
      vlc
-     unstable.yt-dlp
+     yt-dlp
      id3v2
      cdrkit
      lame
