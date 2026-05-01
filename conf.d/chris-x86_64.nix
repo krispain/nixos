@@ -6,6 +6,7 @@
 
 {
   environment.systemPackages = with pkgs; [
+     protonvpn-gui
      brave
      slack
      bitwarden-desktop

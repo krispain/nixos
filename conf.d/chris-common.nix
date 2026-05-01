@@ -161,7 +161,6 @@
      glib
 
     # Security
-     protonvpn-gui
      wireguard-tools
      qbittorrent
      cloudflared
