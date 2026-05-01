@@ -27,8 +27,8 @@
   # printer discovery, custom from https://nixos.wiki/wiki/Printing "Troubleshooting"
   # services.avahi.nssmdns = false; # Use the settings from below
     # settings from avahi-daemon.nix where mdns is replaced with mdns4
-  system.nssModules = pkgs.lib.optional (!config.services.avahi.nssmdns) pkgs.nssmdns;
-  system.nssDatabases.hosts = with pkgs.lib; optionals (!config.services.avahi.nssmdns) (mkMerge [
+  system.nssModules = pkgs.lib.optional (!config.services.avahi.nssmdns4) pkgs.nssmdns;
+  system.nssDatabases.hosts = with pkgs.lib; optionals (!config.services.avahi.nssmdns4) (mkMerge [
     (mkBefore [ "mdns4_minimal [NOTFOUND=return]" ]) # before resolve
     (mkAfter [ "mdns4" ]) # after dns
   ]);
