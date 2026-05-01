@@ -4,9 +4,6 @@
   # Set your time zone.
   time.timeZone = "America/Vancouver";
 
-  # Select internationalisation properties.
-  i18n.defaultLocale = "en_CA.UTF-8";
-
   # Enable the X11 windowing system.
   services.xserver.enable = true;
 
@@ -38,7 +35,6 @@
   hardware.sane.extraBackends = [ pkgs.sane-airscan ];
 
   # Enable sound with pipewire.
-  sound.enable = true;
   hardware.pulseaudio.enable = false;
   security.rtkit.enable = true;
   services.pipewire = {
