@@ -18,8 +18,8 @@
     xkb.variant = "";
   };
 
-  # Enable CUPS to print documents.
-  services.printing.enable = true;
+  # # Enable CUPS to print documents.
+  # services.printing.enable = true;
 
   # printer discovery, custom from https://nixos.wiki/wiki/Printing "Troubleshooting"
   # services.avahi.nssmdns = false; # Use the settings from below
