@@ -64,7 +64,6 @@
   environment.systemPackages = with pkgs; [
      # browsers
      chromium
-     firefox-esr-unwrapped
 
      # CLI tools
      neofetch
@@ -96,16 +95,11 @@
      inetutils
      lshw
      speedtest-cli
-     hugo
      tcpdump
 
      # GUI tools
      nextcloud-client
      meld
-     adoptopenjdk-icedtea-web
-     openvpn
-     mesa-demos
-     # linphone
      mate.atril
      gparted
      lsof
@@ -113,34 +107,15 @@
      monitorets
      alarm-clock-applet
 
-     # Office
-     libreoffice
-
      # Images/sound
-     gimp-with-plugins
-     shotwell
      mate.mate-utils
      mate.eom
      flameshot
-     audacity
      sox
-     ffmpeg
-     ffmpeg-normalize
      vlc
-     yt-dlp
-     id3v2
-     cdrkit
-     lame
-     id3lib
-     mp3gain
      simple-scan
      pulseaudio
 
-     # so we can build our own flatpak, specifically wwphone
-     flatpak-builder
-
-     # for running appimages
-     appimage-run
 
      # Make gnome great again
      gnome-tweaks

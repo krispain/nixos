@@ -35,7 +35,7 @@
   hardware.sane.extraBackends = [ pkgs.sane-airscan ];
 
   # Enable sound with pipewire.
-  hardware.pulseaudio.enable = false;
+  services.pulseaudio.enable = false;
   security.rtkit.enable = true;
   services.pipewire = {
     enable = true;
@@ -78,7 +78,6 @@
      nextcloud-client
      meld
      openvpn
-     linphone
      mate.atril
 
      # Images/sound

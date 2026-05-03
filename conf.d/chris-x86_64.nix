@@ -17,6 +17,26 @@
      gobject-introspection
      printrun
      cloudflared
+     firefox-esr-unwrapped
+     hugo
+     adoptopenjdk-icedtea-web
+     openvpn
+     mesa-demos
+     # linphone
+     libreoffice
+     gimp-with-plugins
+     shotwell
+     audacity
+     ffmpeg
+     ffmpeg-normalize
+     yt-dlp
+     id3v2
+     cdrkit
+     lame
+     id3lib
+     mp3gain
+     flatpak-builder
+     appimage-run
   ];
 
   # run the latest kernel
