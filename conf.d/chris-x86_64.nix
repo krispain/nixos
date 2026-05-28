@@ -37,7 +37,6 @@
      mp3gain
      flatpak-builder
      appimage-run
-     droidcam
   ];
 
   # run the latest kernel
