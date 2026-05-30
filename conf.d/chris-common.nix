@@ -113,6 +113,7 @@
      flameshot
      sox
      vlc
+     celluloid
      simple-scan
      pulseaudio
 
