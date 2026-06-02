@@ -100,7 +100,7 @@
      # GUI tools
      nextcloud-client
      meld
-     mate.atril
+     atril
      gparted
      lsof
      gettext
@@ -108,8 +108,8 @@
      alarm-clock-applet
 
      # Images/sound
-     mate.mate-utils
-     mate.eom
+     mate-utils
+     eom
      flameshot
      sox
      vlc
