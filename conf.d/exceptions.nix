@@ -1,8 +1,8 @@
 {
 
-  # 2023/10/25 update
+  # 2026/06/02 update
   nixpkgs.config.permittedInsecurePackages = [
-    "electron-33.4.11"
+    "electron-39.8.10
   ];
 
 }
