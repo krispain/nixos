@@ -66,7 +66,7 @@
      chromium
 
      # CLI tools
-     neofetch
+     hyfetch
      htop
      gtop
      ncdu
