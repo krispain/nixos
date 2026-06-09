@@ -2,7 +2,7 @@
 {
   environment.systemPackages = with pkgs; [
      claude-code
-     pip
+     python313Packages.pip
   ];
 
 }
