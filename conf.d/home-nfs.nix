@@ -11,7 +11,7 @@
       ];
     };
   fileSystems."/mnt/storage-3" =
-    { device = "172.16.1.250:/storage-3";
+    { device = "172.16.1.250:/mnt/array1/storage-3";
       fsType = "nfs";
       options = [
           "x-systemd.automount"
