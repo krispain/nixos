@@ -53,7 +53,7 @@
 
      # CLI tools
      mate.mate-terminal
-     neofetch
+     hyfetch
      htop
      ncdu
      git
