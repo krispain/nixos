@@ -52,7 +52,7 @@
      chromium
 
      # CLI tools
-     mate.mate-terminal
+     mate-terminal
      hyfetch
      htop
      ncdu
@@ -78,12 +78,12 @@
      nextcloud-client
      meld
      openvpn
-     mate.atril
+     atril
 
      # Images/sound
      gimp
-     mate.mate-utils
-     mate.eom
+     mate-utils
+     eom
      audacity
      sox
      ffmpeg
