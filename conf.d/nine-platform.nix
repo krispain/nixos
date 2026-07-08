@@ -6,6 +6,7 @@
      go
      google-cloud-sdk
      kubectl
+     glab
   ];
 
 }
