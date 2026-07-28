@@ -37,6 +37,7 @@
      mp3gain
      flatpak-builder
      appimage-run
+     gcc
   ];
 
   # run the latest kernel
