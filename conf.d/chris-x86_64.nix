@@ -9,7 +9,6 @@
      proton-vpn
      brave
      slack
-     bitwarden-desktop
      signal-desktop
      mplayer
      gnomeExtensions.system-monitor
