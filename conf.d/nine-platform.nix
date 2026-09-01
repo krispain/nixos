@@ -9,4 +9,9 @@
      glab
   ];
 
+  environment.sessionVariables = {
+    GOPRIVATE="gitlab.nine.ch";
+    GO_REPOSITORY_USE_HOST_CACHE="1";
+  };
+
 }
