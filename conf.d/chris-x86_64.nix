@@ -37,6 +37,7 @@
      flatpak-builder
      appimage-run
      gcc
+     openssl
   ];
 
   # run the latest kernel
