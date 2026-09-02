@@ -7,6 +7,7 @@
      google-cloud-sdk
      kubectl
      glab
+     eget
   ];
 
   environment.sessionVariables = {
