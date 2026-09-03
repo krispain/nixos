@@ -12,7 +12,6 @@
     es34="ssh cpayne-es34.nine.ch";
     es34m="mosh --no-init cpayne-es34.nine.ch";
     es34e="et cpayne-es34.nine.ch";
-    es34z="et -c \"/home/cpayne/bin/zmx attach $1\" cpayne-es34.nine.ch";
     rmm="openvpn --config /home/cpayne/.nine/nettools-vpn/cpayne.nine.ch.ovpn";
     rmm-es34="openvpn --config /home/cpayne/.nine/nettools-vpn-es34/cpayne.nine.ch.ovpn";
   };
