@@ -9,7 +9,7 @@
   hardware.printers.ensureDefaultPrinter = "LesiaHP";
   hardware.printers.ensurePrinters = [{
     name = "LesiaHP";
-    deviceUri = "ipp://172.16.1.48"; # <- Set print URI here
+    deviceUri = "ipp://172.16.1.50"; # <- Set print URI here
     #description = "";
     #location = "";
     model = "HP/hp-officejet_4650_series.ppd.gz"; 
