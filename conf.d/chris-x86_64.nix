@@ -4,6 +4,7 @@
     unstable = import <nixos-unstable> {};
   in
 
+{ nixpkgs.config.allowUnfree = true; }
 {
   environment.systemPackages = with pkgs; [
      proton-vpn
