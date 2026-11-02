@@ -8,7 +8,7 @@
   environment.systemPackages = with pkgs; [
      proton-vpn
      brave
-     unstable.slack
+     # unstable.slack
      signal-desktop
      mplayer
      gnomeExtensions.system-monitor
