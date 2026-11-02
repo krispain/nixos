@@ -1,14 +1,14 @@
 { config, lib, pkgs, ... }:
 
   let
-    unstable = import <nixos-unstable> {};
+    unstable = import <nixos-unstable> { config = { allowUnfree = true; }; };
   in
 
 {
   environment.systemPackages = with pkgs; [
      proton-vpn
      brave
-     # slack
+     unstable.slack
      signal-desktop
      mplayer
      gnomeExtensions.system-monitor
