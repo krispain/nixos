@@ -5,12 +5,10 @@
   in
 
 {
-  nixpkgs.config.allowUnfree = true; 
-
   environment.systemPackages = with pkgs; [
      proton-vpn
      brave
-     unstable.slack
+     # slack
      signal-desktop
      mplayer
      gnomeExtensions.system-monitor
