@@ -7,7 +7,7 @@
 {
   environment.systemPackages = with pkgs; [
      proton-vpn
-     brave
+     unstable.brave
      # unstable.slack
      signal-desktop
      mplayer
